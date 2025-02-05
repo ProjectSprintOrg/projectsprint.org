@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-    【⚖️ <a href="CODE/v4/.3_ja/framework.md">Framework</a> | 🌏 <a href="CODE/v4/.3_ja/definitions.md">Definitions</a> | 🚀 <a href="CODE/v4/.3_ja/introduction.md">Introduction</a> | 👪 <a href="practical-guide/CODEv4_based/README.md">Practical Guide</a> | 📚 <a href="https://github.com/copilot-jp/project-sprint/releases">Release Note</a>】
+    【⚖️ <a href="CODE/v4/.3_ja/framework.md">Framework</a> | 🌏 <a href="CODE/v4/.3_ja/definitions.md">Definitions</a> | 🚀 <a href="CODE/v4/.3_ja/introduction.md">Introduction</a> | 👪 <a href="practical-guide/CODEv4_based/README.md">Practical Guide</a> | 📚 <a href="https://github.com/ProjectSprintOrg/projectsprint.org/releases">Release Note</a>】
 
 </p>
 
@@ -27,4 +27,4 @@ Project Sprint は、「チームがプロジェクトを規定する」とい�
 
 そんな方はぜひ一度、Project Sprint がご案内する適応型のプロジェクトの世界へ飛び込んでみませんか？
 
-※Project Sprint におけるプロジェクトの捉え方について、さらに詳しくは[こちら](CODE/v4/.3/definitions.md)をご覧ください。
+※Project Sprint におけるプロジェクトの捉え方について、さらに詳しくは[こちら](CODE/v4/.3_jp/definitions.md)をご覧ください。
