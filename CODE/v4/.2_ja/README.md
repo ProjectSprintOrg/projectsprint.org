@@ -16,4 +16,3 @@ Project Sprint の核となる概念や価値観を示す文書です。Project 
 * [**Practical Guide**](https://miro.com/app/board/uXjVMX-zl6s=/)  
 Project Sprint のフレームワークを実際のプロジェクトに導入し使いこなすためのガイドブックです。諸概念を図解し、分かりやすく説明しています。
 
-★Project Sprint の内容に疑問やご意見を持たれた方は、[こちら](https://github.com/copilot-jp/project-sprint/discussions)のGitHub Discussionへお寄せください。

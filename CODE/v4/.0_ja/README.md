@@ -20,5 +20,3 @@ v4では、Project Sprint がこれまでも重視してきた「作成物を生
 * 出力を成果との1対1の対応関係から解き放ち、より幅広く価値を生み出すことができるようにする
 * 予測型・適応型両方のプロジェクトに対応できるようになる
 * プロジェクトをよりチームメンバー全員のものとして捉えることができるようになる
-
-★Project Sprint の内容に疑問やご意見を持たれた方は、[こちら](https://github.com/copilot-jp/project-sprint/discussions)のGitHub Discussionへお寄せください。
