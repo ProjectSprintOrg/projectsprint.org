@@ -8,9 +8,9 @@ const base = site.value.base.replace(/\/$/, '')
 
 const info = computed(() => {
   const p = route.path.replace(base, '')
-  const m = p.match(/^\/(?:en\/)?archive\/(v[\d.]+)\//)
+  const m = p.match(/^(\/(?:en\/)?archive\/(v[\d.]+)\/)/)
   if (!m) return null
-  return { version: m[1], en: p.startsWith('/en/') }
+  return { root: m[1], version: m[2], en: p.startsWith('/en/'), isIndex: p === m[1] }
 })
 </script>
 
@@ -18,13 +18,17 @@ const info = computed(() => {
   <div v-if="info" class="archive-notice">
     <template v-if="info.en">
       <strong>Archived version ({{ info.version }}).</strong>
-      This page is kept for reference and is no longer updated. The current version is in Japanese:
-      <a :href="`${base}/code/`">CODE v5.0</a>.
+      This page is kept for reference and is no longer updated.
+      <a v-if="!info.isIndex" :href="`${base}${info.root}`">Contents of {{ info.version }}</a>
+      <span v-if="!info.isIndex"> · </span>
+      <a :href="`${base}/code/`">Current version (CODE v5.0, Japanese)</a>
     </template>
     <template v-else>
       <strong>アーカイブ版（{{ info.version }}）です。</strong>
-      このページは参照用に残しているもので、更新されません。最新版は
-      <a :href="`${base}/code/`">CODE v5.0</a> をご覧ください。
+      参照用に残しているページで、更新されません。
+      <a v-if="!info.isIndex" :href="`${base}${info.root}`">{{ info.version }} の目次</a>
+      <span v-if="!info.isIndex"> · </span>
+      <a :href="`${base}/code/`">最新版（CODE v5.0）</a>
     </template>
   </div>
 </template>
@@ -39,4 +43,5 @@ const info = computed(() => {
   font-size: 14px;
   line-height: 1.7;
 }
+.archive-notice a { margin-left: 2px; }
 </style>

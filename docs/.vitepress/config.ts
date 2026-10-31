@@ -2,11 +2,34 @@ import { defineConfig } from 'vitepress'
 import llmstxt from 'vitepress-plugin-llms'
 import footnote from 'markdown-it-footnote'
 import { fromIndex } from './sidebar'
+import { execSync } from 'node:child_process'
+import path from 'node:path'
 
 // GitHub Pages のプロジェクトサイト（https://projectsprintorg.github.io/projectsprint.org/）では
 // サブパス配信になる。独自ドメインに切り替えるときは VITEPRESS_BASE=/ を渡す。
 const base = process.env.VITEPRESS_BASE ?? '/projectsprint.org/'
 const repo = 'https://github.com/ProjectSprintOrg/projectsprint.org'
+
+// 過去版は「内容の最終更新」としてそのバージョンのリリース日を表示する
+const ARCHIVE_DATES: Record<string, string> = {
+  'v4.3': '2024-01-11',
+  'v3.3': '2022-10-04',
+  'v2.2': '2021-09-28',
+  'v2.0': '2021-07-15'
+}
+
+// md ファイルの git 上の最終コミット日時（ファイルの移動・改名を追跡する）
+function contentUpdatedAt(file: string): number | undefined {
+  try {
+    const out = execSync(`git log -1 --follow --diff-filter=AM --format=%at -- "${file}"`, {
+      cwd: path.resolve(__dirname, '../..'),
+      stdio: ['ignore', 'pipe', 'ignore']
+    }).toString().trim()
+    return out ? Number(out) * 1000 : undefined
+  } catch {
+    return undefined
+  }
+}
 
 export default defineConfig({
   base,
@@ -15,6 +38,26 @@ export default defineConfig({
   description: '不確実な状況においてプロジェクトを前進させるためのオープンソースのフレームワーク',
   cleanUrls: true,
   lastUpdated: true,
+  appearance: false,
+  transformPageData(pageData) {
+    const rel = pageData.relativePath
+    const fm = pageData.frontmatter
+    // 1 カラムの読み物にする：左サイドバーと右の見出し列は使わない
+    fm.sidebar = false
+    fm.aside = false
+    fm.outline = false
+    // 順番に読む文書（CODE / Practical Guide / 過去版）以外は前後ナビを出さない
+    const sequential = /^(code|practical-guide|archive|en\/archive)\//.test(rel) && !/index\.md$/.test(rel)
+    if (!sequential) {
+      fm.prev = false
+      fm.next = false
+    }
+    const archive = rel.match(/^(?:en\/)?archive\/(v[\d.]+)\//)
+    const lastUpdated = archive
+      ? Date.parse(ARCHIVE_DATES[archive[1]])
+      : contentUpdatedAt(path.join('docs', rel))
+    return lastUpdated ? { lastUpdated } : {}
+  },
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: `${base}pjs_logo.png` }],
     ['meta', { property: 'og:image', content: `${base}pjs_og.png` }],
@@ -22,6 +65,7 @@ export default defineConfig({
   ],
   markdown: {
     image: { lazyLoading: true },
+    headers: { level: [2, 3] },
     config(md) {
       md.use(footnote)
     }
@@ -125,13 +169,11 @@ export default defineConfig({
             ] }
           ]
         },
-        outline: { level: [2, 3], label: 'このページの内容' },
         docFooter: { prev: '前のページ', next: '次のページ' },
-        lastUpdated: { text: '最終更新' },
+        lastUpdated: { text: '内容の最終更新', formatOptions: { dateStyle: 'long', forceLocale: true } },
         editLink: { pattern: `${repo}/edit/main/docs/:path`, text: 'GitHub でこのページを編集' },
         returnToTopLabel: 'ページの先頭へ',
         sidebarMenuLabel: 'メニュー',
-        darkModeSwitchLabel: '表示テーマ',
         langMenuLabel: '言語'
       }
     },
@@ -159,7 +201,8 @@ export default defineConfig({
             ] }
           ]
         },
-        editLink: { pattern: `${repo}/edit/main/docs/:path`, text: 'Edit this page on GitHub' }
+        editLink: { pattern: `${repo}/edit/main/docs/:path`, text: 'Edit this page on GitHub' },
+        lastUpdated: { text: 'Content last updated', formatOptions: { dateStyle: 'long', forceLocale: true } }
       }
     }
   },
