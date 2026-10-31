@@ -47,7 +47,8 @@ export default defineConfig({
     // 代わりに VersionFooter がそのバージョンの構成全体を表示する。
     fm.prev = false
     fm.next = false
-    const archive = rel.match(/^(?:en\/)?archive\/(v[\d.]+)\//)
+    // Practical Guide は CODE v4 準拠なので、準拠バージョン（v4.3）のリリース日を表示する
+    const archive = rel.match(/^(?:en\/)?archive\/(v[\d.]+)\//) ?? (rel.startsWith('practical-guide/') ? [rel, 'v4.3'] : null)
     let lastUpdated = archive
       ? Date.parse(ARCHIVE_DATES[archive[1]])
       : contentUpdatedAt(path.join('docs', rel))
