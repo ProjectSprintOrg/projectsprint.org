@@ -42,16 +42,10 @@ export default defineConfig({
   transformPageData(pageData) {
     const rel = pageData.relativePath
     const fm = pageData.frontmatter
-    // 1 カラムの読み物にする：左サイドバーと右の見出し列は使わない
-    fm.sidebar = false
-    fm.aside = false
-    fm.outline = false
-    // 順番に読む文書（CODE / Practical Guide / 過去版）以外は前後ナビを出さない
-    const sequential = /^(code|practical-guide|archive|en\/archive)\//.test(rel) && !/index\.md$/.test(rel)
-    if (!sequential) {
-      fm.prev = false
-      fm.next = false
-    }
+    // 前後ナビは使わない（Project Sprint は前から順に読む文書ではない）。
+    // 代わりに VersionFooter がそのバージョンの構成全体を表示する。
+    fm.prev = false
+    fm.next = false
     const archive = rel.match(/^(?:en\/)?archive\/(v[\d.]+)\//)
     const lastUpdated = archive
       ? Date.parse(ARCHIVE_DATES[archive[1]])
@@ -87,20 +81,21 @@ export default defineConfig({
           { text: 'Community', link: '/community/', activeMatch: '^/community/' },
           { text: 'Releases', link: '/releases' },
           {
-            text: 'Archive',
+            text: 'バージョン',
             items: [
-              { text: '過去バージョン一覧', link: '/archive/' },
+              { text: 'v5.0（最新）', link: '/code/' },
               { text: 'v4.3', link: '/archive/v4.3/' },
               { text: 'v3.3', link: '/archive/v3.3/' },
               { text: 'v2.2', link: '/archive/v2.2/' },
-              { text: 'En v2.0', link: '/en/archive/v2.0/' }
+              { text: 'En v2.0', link: '/en/archive/v2.0/' },
+              { text: '過去バージョンについて', link: '/archive/' }
             ]
           }
         ],
         sidebar: {
           '/code/': [
             {
-              text: 'CODE v5.0',
+              text: 'CODE v5.0（最新版）',
               items: [
                 { text: 'CODE とは', link: '/code/' },
                 { text: 'Introduction', link: '/code/introduction' },
@@ -138,13 +133,13 @@ export default defineConfig({
             }
           ],
           '/archive/v4.3/': [
-            { text: 'アーカイブ', link: '/archive/' },
-            { text: 'v4.3', items: [{ text: '文書構成', link: '/archive/v4.3/' }, ...fromIndex('archive/v4.3/index.md')] }
+            { text: '最新版 CODE v5.0', link: '/code/' },
+            { text: 'v4.3（アーカイブ）', items: [{ text: '文書構成', link: '/archive/v4.3/' }, ...fromIndex('archive/v4.3/index.md')] }
           ],
           '/archive/v3.3/': [
-            { text: 'アーカイブ', link: '/archive/' },
+            { text: '最新版 CODE v5.0', link: '/code/' },
             {
-              text: 'v3.3',
+              text: 'v3.3（アーカイブ）',
               items: [
                 { text: 'CODE とは', link: '/archive/v3.3/' },
                 { text: 'Theories and Practices', link: '/archive/v3.3/theories_and_practices' },
@@ -156,8 +151,8 @@ export default defineConfig({
             }
           ],
           '/archive/v2.2/': [
-            { text: 'アーカイブ', link: '/archive/' },
-            { text: 'v2.2', items: [{ text: 'CODE とは', link: '/archive/v2.2/' }, ...fromIndex('archive/v2.2/index.md', { recurse: true })] }
+            { text: '最新版 CODE v5.0', link: '/code/' },
+            { text: 'v2.2（アーカイブ）', items: [{ text: 'CODE とは', link: '/archive/v2.2/' }, ...fromIndex('archive/v2.2/index.md', { recurse: true })] }
           ],
           '/archive/': [
             { text: '過去バージョン', items: [
@@ -169,7 +164,7 @@ export default defineConfig({
             ] }
           ]
         },
-        docFooter: { prev: '前のページ', next: '次のページ' },
+        outline: { level: [2, 3], label: 'このページの内容' },
         lastUpdated: { text: '内容の最終更新', formatOptions: { dateStyle: 'long', forceLocale: true } },
         editLink: { pattern: `${repo}/edit/main/docs/:path`, text: 'GitHub でこのページを編集' },
         returnToTopLabel: 'ページの先頭へ',
@@ -191,8 +186,8 @@ export default defineConfig({
         ],
         sidebar: {
           '/en/archive/v2.0/': [
-            { text: 'English', link: '/en/' },
-            { text: 'En v2.0', items: [{ text: 'What is CODE?', link: '/en/archive/v2.0/' }, ...fromIndex('en/archive/v2.0/index.md', { recurse: true })] }
+            { text: 'Current version: CODE v5.0 (Japanese)', link: '/code/' },
+            { text: 'En v2.0 (archived)', items: [{ text: 'What is CODE?', link: '/en/archive/v2.0/' }, ...fromIndex('en/archive/v2.0/index.md', { recurse: true })] }
           ],
           '/en/': [
             { text: 'English', items: [
