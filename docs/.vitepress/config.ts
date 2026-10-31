@@ -3,6 +3,7 @@ import llmstxt from 'vitepress-plugin-llms'
 import footnote from 'markdown-it-footnote'
 import { fromIndex } from './sidebar'
 import { execSync } from 'node:child_process'
+import fs from 'node:fs'
 import path from 'node:path'
 
 // GitHub Pages のプロジェクトサイト（https://projectsprintorg.github.io/projectsprint.org/）では
@@ -47,9 +48,18 @@ export default defineConfig({
     fm.prev = false
     fm.next = false
     const archive = rel.match(/^(?:en\/)?archive\/(v[\d.]+)\//)
-    const lastUpdated = archive
+    let lastUpdated = archive
       ? Date.parse(ARCHIVE_DATES[archive[1]])
       : contentUpdatedAt(path.join('docs', rel))
+    // 他のファイルを読み込んで表示しているページ（行動規範・貢献ガイドなど）は、
+    // 薄いページ自身ではなく読み込み元ファイルの更新日を使う
+    if (!archive) {
+      const src = fs.readFileSync(path.join(__dirname, '..', rel), 'utf8')
+      const included = [...src.matchAll(/<!--@include:\s*([^\s{]+?)(?:\{[^}]*\})?\s*-->/g)]
+        .map(m => contentUpdatedAt(path.normalize(path.join('docs', path.dirname(rel), m[1]))))
+        .filter((t): t is number => !!t)
+      if (included.length) lastUpdated = Math.max(...included)
+    }
     return lastUpdated ? { lastUpdated } : {}
   },
   head: [

@@ -1,5 +1,6 @@
 ---
 title: ライセンス
+lastUpdated: false
 ---
 # ライセンス
 
