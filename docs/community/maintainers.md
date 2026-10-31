@@ -8,7 +8,7 @@
 
 ## コントリビューター
 
-[@tktomi](https://github.com/tktomi)、[@Satoshi-Matsumoto](https://github.com/Satoshi-Matsumoto)、[@yoneyama-tomohiro](https://github.com/yoneyama-tomohiro)、[@nanamikagwa](https://github.com/nanamikagwa)
+[@tktomi](https://github.com/tktomi)、[@Satoshi-Matsumoto](https://github.com/Satoshi-Matsumoto)、[@yoneyama-tomohiro](https://github.com/yoneyama-tomohiro)、[@nanamikagwa](https://github.com/nanamikagwa)、[@kikuchiharuma](https://github.com/kikuchiharuma)、[@shotaro8yagi](https://github.com/shotaro8yagi)
 
 Project Sprint の思想に共感し、リポジトリに関する議論に参加してくれている仲間たちです。Project Sprint を実際のプロジェクトに応用してみて得られた実践知を還元したり、Project Sprint が取り込むべき考え方を紹介したり、記述や英訳を手伝ったり、さまざまな方法で Project Sprint のアップデートに貢献してくれています。
 
