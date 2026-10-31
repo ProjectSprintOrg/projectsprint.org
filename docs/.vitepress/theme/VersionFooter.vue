@@ -11,13 +11,18 @@ const base = site.value.base.replace(/\/$/, '')
 
 const isEn = computed(() => route.path.replace(base, '').startsWith('/en/'))
 
-const VERSIONS = [
+// 言語ごとのバージョン一覧。英語版は言語切り替えの側に置き、日本語のバージョン一覧には混ぜない
+const VERSIONS_JA = [
   { text: 'v5.0', note: '最新', link: '/code/' },
   { text: 'v4.3', link: '/archive/v4.3/' },
   { text: 'v3.3', link: '/archive/v3.3/' },
-  { text: 'v2.2', link: '/archive/v2.2/' },
-  { text: 'En v2.0', link: '/en/archive/v2.0/' }
+  { text: 'v2.2', link: '/archive/v2.2/' }
 ]
+const VERSIONS_EN = [
+  { text: 'v5.0', note: 'current, Japanese', link: '/code/' },
+  { text: 'v2.0', note: 'English', link: '/en/archive/v2.0/' }
+]
+const versions = computed(() => (isEn.value ? VERSIONS_EN : VERSIONS_JA))
 
 // 「このバージョンの構成」：サイドバーのグループを列にする。
 // 子項目を持つ項目（Theories / Practices / Tutorial など）は独立した列にして、縦に長くなりすぎないようにする。
@@ -57,10 +62,10 @@ const href = (link?: string) => `${base}${link ?? ''}`
     </div>
     <div class="version-footer__versions">
       <span class="version-footer__label">{{ isEn ? 'Versions' : 'バージョン' }}</span>
-      <a v-for="v in VERSIONS" :key="v.link" :href="href(v.link)">
-        {{ v.text }}<small v-if="v.note">（{{ isEn ? 'current' : v.note }}）</small>
+      <a v-for="v in versions" :key="v.link" :href="href(v.link)">
+        {{ v.text }}<small v-if="v.note">（{{ v.note }}）</small>
       </a>
-      <a :href="href('/archive/')" class="version-footer__more">{{ isEn ? 'About archived versions' : '過去バージョンについて' }}</a>
+      <a :href="href(isEn ? '/en/' : '/archive/')" class="version-footer__more">{{ isEn ? 'English documentation' : '過去バージョンについて' }}</a>
     </div>
   </footer>
 </template>

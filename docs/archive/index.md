@@ -7,7 +7,10 @@
 | [v4.3](./v4.3/) | Project Sprint がこれまでも重視してきた「作成物を生む」という行為により重点を置き、プロジェクトを「出力」と「成果」の関係から捉えなおした。 | Introduction / Definitions / Framework |
 | [v3.3](./v3.3/) | プロジェクトのすべての要素はプロジェクトチームによって規定されるものであるという思想に基づき、プロジェクトチームを主体とする記述に全面アップデート。 | Theories / Practices / Essentials / Reference |
 | [v2.2](./v2.2/) | 読みやすさ・使いやすさを考え、各種ドキュメント体系を再構築。 | Tutorial / Essentials / Tips / Advance / Reference |
-| [En v2.0](/en/archive/v2.0/) | v2.0 の英語版。 | Tutorial / Essentials / Tips / Advance / Reference |
+
+## 英語版について
+
+英語版は右上の言語切り替えから [English](/en/) をご覧ください。現在は v2.0 の英語版のみ公開しており、v5 の英訳を計画しています。
 
 ## 掲載していないマイナーバージョンについて
 

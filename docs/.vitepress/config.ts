@@ -87,7 +87,6 @@ export default defineConfig({
               { text: 'v4.3', link: '/archive/v4.3/' },
               { text: 'v3.3', link: '/archive/v3.3/' },
               { text: 'v2.2', link: '/archive/v2.2/' },
-              { text: 'En v2.0', link: '/en/archive/v2.0/' },
               { text: '過去バージョンについて', link: '/archive/' }
             ]
           }
@@ -159,8 +158,7 @@ export default defineConfig({
               { text: '一覧', link: '/archive/' },
               { text: 'v4.3', link: '/archive/v4.3/' },
               { text: 'v3.3', link: '/archive/v3.3/' },
-              { text: 'v2.2', link: '/archive/v2.2/' },
-              { text: 'En v2.0', link: '/en/archive/v2.0/' }
+              { text: 'v2.2', link: '/archive/v2.2/' }
             ] }
           ]
         },
