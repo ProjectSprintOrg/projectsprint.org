@@ -76,7 +76,7 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Workshop', link: '/workshop/' },
-          { text: 'CODE', link: '/code/', activeMatch: '^/code/' },
+          { text: 'CODE v5.0', link: '/code/', activeMatch: '^/code/' },
           { text: 'Practical Guide', link: '/practical-guide/', activeMatch: '^/practical-guide/' },
           { text: 'Community', link: '/community/', activeMatch: '^/community/' },
           { text: 'Releases', link: '/releases' },
