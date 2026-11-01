@@ -81,6 +81,12 @@ const href = (link?: string) => `${base}${link ?? ''}`
       </a>
       <a :href="href(isEn ? '/en/' : '/archive/')" class="version-footer__more">{{ isEn ? 'English documentation' : '過去バージョンについて' }}</a>
     </div>
+    <div class="version-footer__legal">
+      <span>© 2020–2026 Project Sprint Org and contributors</span>
+      <span v-if="isEn">Text licensed under <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span>
+      <span v-else>文書は <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">CC BY-SA 4.0</a> で公開しています</span>
+      <a :href="href('/community/colophon')">{{ isEn ? 'About this site (Japanese)' : 'このサイトについて' }}</a>
+    </div>
   </footer>
 </template>
 
@@ -140,6 +146,16 @@ const href = (link?: string) => `${base}${link ?? ''}`
   border-top: 1px dashed var(--vp-c-divider);
 }
 .version-footer__label { font-weight: 600; color: var(--vp-c-text-1); }
+.version-footer__legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin-top: 20px;
+  font-size: 12px;
+  color: var(--vp-c-text-3);
+}
+.version-footer__legal a { color: var(--vp-c-text-3); text-decoration: underline; }
+.version-footer__legal a:hover { color: var(--vp-c-brand-1); }
 .version-footer__versions small { color: var(--vp-c-text-3); font-size: 12px; }
 .version-footer__more { margin-left: auto; }
 </style>
