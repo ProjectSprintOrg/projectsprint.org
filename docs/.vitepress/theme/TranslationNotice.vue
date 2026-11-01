@@ -12,10 +12,10 @@ const t = computed(() => frontmatter.value.translation as
 <template>
   <div v-if="t" class="translation-notice">
     <p>
-      <strong>AI-assisted translation.</strong>
-      This page was translated from the Japanese original (CODE v5.0) with the help of AI and reviewed by the Project Sprint community.
+      <strong>AI-assisted translation, community review wanted.</strong>
+      This page was translated from the Japanese original (CODE v5.0) with the help of AI. It has not yet been reviewed by a native English speaker.
       The <a :href="`${base}${t.source}`">Japanese text</a> is the authoritative version.
-      If a passage reads wrongly, use "Edit this page on GitHub" below or
+      If a passage reads wrongly or misses the meaning, please help: use "Edit this page on GitHub" below or
       <a href="https://github.com/ProjectSprintOrg/projectsprint.org/issues/new" target="_blank" rel="noopener">open an issue</a>.
     </p>
     <p v-if="t.outdated" class="translation-notice__outdated">

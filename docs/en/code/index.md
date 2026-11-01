@@ -22,4 +22,4 @@ If you have not yet experienced Project Sprint, we recommend going through the [
 
 ## About This Translation
 
-This English edition is an AI-assisted translation of the Japanese original, reviewed by the Project Sprint community. The Japanese text is the authoritative version. Each page carries a notice to that effect at the top. See the translator's notes on the [Key Terms](./keyterms) page for how the central Japanese terms were rendered.
+This English edition is an AI-assisted translation of the Japanese original. It has not yet been reviewed by a native English speaker, and we are looking for reviewers: if you read English and have practiced Project Sprint, your corrections are welcome through "Edit this page on GitHub" on any page. The Japanese text is the authoritative version. Each page carries a notice to that effect at the top. See the translator's notes on the [Key Terms](./keyterms) page for how the central Japanese terms were rendered.

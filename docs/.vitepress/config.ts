@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import llmstxt from 'vitepress-plugin-llms'
 import footnote from 'markdown-it-footnote'
 import { fromIndex } from './sidebar'
+import { writeRedirects } from './redirects'
 import { execSync } from 'node:child_process'
 import fs from 'node:fs'
 import path from 'node:path'
@@ -91,6 +92,11 @@ export default defineConfig({
     plugins: [llmstxt()]
   },
   sitemap: { hostname: 'https://www.projectsprint.org' },
+  buildEnd(siteConfig) {
+    // 旧 GitBook の URL から新 URL へ転送するページを生成する
+    const n = writeRedirects(siteConfig.outDir, siteConfig.site.base)
+    console.log(`redirects: ${n} files written`)
+  },
 
   locales: {
     root: {

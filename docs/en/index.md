@@ -11,7 +11,7 @@ It treats a project not as the execution of a predefined answer, but as an activ
 
 | | Status |
 | --- | --- |
-| **CODE v5.0** (current) | Available: [CODE v5.0](./code/). An AI-assisted translation of the Japanese original, reviewed by the community. The [Japanese text](/code/) is authoritative. |
+| **CODE v5.0** (current) | Available: [CODE v5.0](./code/). An AI-assisted translation of the Japanese original. Community review wanted. The [Japanese text](/code/) is authoritative. |
 | **Practical Guide** | Japanese only for now. |
 | **CODE v2.0** | Available as an archived version: [En v2.0](./archive/v2.0/). Concepts and terminology have changed significantly since v2. |
 

@@ -32,6 +32,10 @@ jobs:
           enablement: true   # 初回実行時に Pages を有効化する（権限が無い場合は Settings > Pages で手動設定）
       - run: npm ci
       - run: npm run docs:build
+        env:
+          # 本番（main）は独自ドメイン www.projectsprint.org のルートで配信するので base は /。
+          # プレビュー用ブランチは projectsprintorg.github.io/projectsprint.org/ 配下なのでサブパス。
+          VITEPRESS_BASE: ${{ github.ref == 'refs/heads/main' && '/' || '/projectsprint.org/' }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
