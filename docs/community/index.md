@@ -23,3 +23,4 @@ Project Sprint は、[CC BY-SA 4.0 ライセンス](./license)で提供される
 - [関連サービス](./ecosystem)：Project Sprint に基づいて設計されたサービス
 - [行動規範](./code-of-conduct)
 - [ライセンス](./license)
+- [このサイトについて](./colophon)：使っている道具とライセンス、作り方

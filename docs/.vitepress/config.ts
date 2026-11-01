@@ -79,7 +79,8 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: `${base}pjs_logo.png` }],
     ['meta', { property: 'og:image', content: `${base}pjs_og.png` }],
-    ['meta', { property: 'og:type', content: 'website' }]
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['link', { rel: 'license', href: 'https://creativecommons.org/licenses/by-sa/4.0/' }]
   ],
   markdown: {
     image: { lazyLoading: true },
@@ -156,7 +157,8 @@ export default defineConfig({
                 { text: 'メンバー', link: '/community/maintainers' },
                 { text: '関連サービス', link: '/community/ecosystem' },
                 { text: '行動規範', link: '/community/code-of-conduct' },
-                { text: 'ライセンス', link: '/community/license' }
+                { text: 'ライセンス', link: '/community/license' },
+                { text: 'このサイトについて', link: '/community/colophon' }
               ]
             }
           ],
@@ -250,8 +252,8 @@ export default defineConfig({
     search: { provider: 'local' },
     socialLinks: [{ icon: 'github', link: repo }],
     footer: {
-      message: 'Project Sprint is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">CC BY-SA 4.0</a>.',
-      copyright: 'Project Sprint Org'
+      message: '文書は <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">CC BY-SA 4.0</a> で公開しています。 · <a href="' + base + 'community/colophon">このサイトについて</a>',
+      copyright: '© 2020–2026 Project Sprint Org and contributors'
     }
   }
 })
