@@ -11,10 +11,11 @@ It treats a project not as the execution of a predefined answer, but as an activ
 
 | | Status |
 | --- | --- |
-| **CODE v5.0** (current) | Translation planned. The Japanese original is at [CODE](/code/). |
+| **CODE v5.0** (current) | Available: [CODE v5.0](./code/). An AI-assisted translation of the Japanese original, reviewed by the community. The [Japanese text](/code/) is authoritative. |
+| **Practical Guide** | Japanese only for now. |
 | **CODE v2.0** | Available as an archived version: [En v2.0](./archive/v2.0/). Concepts and terminology have changed significantly since v2. |
 
-We welcome contributors who can help translate CODE v5.0 into English. See [Community](/community/) (Japanese) or open an issue on [GitHub](https://github.com/ProjectSprintOrg/projectsprint.org/issues/new).
+Translations are maintained in the same repository as the Japanese original. If you find a passage that does not read naturally or that misses the meaning of the Japanese, use "Edit this page on GitHub" on that page or open an issue on [GitHub](https://github.com/ProjectSprintOrg/projectsprint.org/issues/new). Contributors who can review the English against the Japanese are especially welcome.
 
 ## License
 

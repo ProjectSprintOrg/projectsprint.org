@@ -61,6 +61,18 @@ export default defineConfig({
         .filter((t): t is number => !!t)
       if (included.length) lastUpdated = Math.max(...included)
     }
+    // 英訳ページ：原文（日本語）の更新日と比べ、原文の方が新しければ「翻訳が古い」と表示する
+    const tr = rel.match(/^en\/code\/(.+)\.md$/)
+    if (tr) {
+      const sourceRel = `code/${tr[1]}.md`
+      const sourceAt = contentUpdatedAt(path.join('docs', sourceRel))
+      const transAt = contentUpdatedAt(path.join('docs', rel))
+      fm.translation = {
+        source: '/' + sourceRel.replace(/index\.md$/, '').replace(/\.md$/, ''),
+        sourceDate: sourceAt ? new Date(sourceAt).toISOString().slice(0, 10) : undefined,
+        outdated: !!(sourceAt && transAt && sourceAt > transAt)
+      }
+    }
     return lastUpdated ? { lastUpdated } : {}
   },
   head: [
@@ -189,18 +201,34 @@ export default defineConfig({
       description: 'An open-source framework for moving projects forward under uncertainty',
       themeConfig: {
         nav: [
+          { text: 'CODE v5.0', link: '/en/code/', activeMatch: '^/en/code/' },
           { text: 'Archive (v2.0)', link: '/en/archive/v2.0/' },
-          { text: 'Community', link: '/community/' },
-          { text: '日本語版', link: '/' }
+          { text: 'Community (Japanese)', link: '/community/' },
+          { text: 'Releases (Japanese)', link: '/releases' }
         ],
         sidebar: {
+          '/en/code/': [
+            {
+              text: 'CODE v5.0 (current)',
+              items: [
+                { text: 'About CODE', link: '/en/code/' },
+                { text: 'Introduction', link: '/en/code/introduction' },
+                { text: 'Step0. The Individual Updates the World', link: '/en/code/step0' },
+                { text: 'Step1. Sharing Our Perception of the World with Others', link: '/en/code/step1' },
+                { text: 'Key Terms', link: '/en/code/keyterms' }
+              ]
+            },
+            { text: 'Japanese original', link: '/code/' },
+            { text: 'Archive: En v2.0', link: '/en/archive/v2.0/' }
+          ],
           '/en/archive/v2.0/': [
-            { text: 'Current version: CODE v5.0 (Japanese)', link: '/code/' },
+            { text: 'Current version: CODE v5.0', link: '/en/code/' },
             { text: 'En v2.0 (archived)', items: [{ text: 'What is CODE?', link: '/en/archive/v2.0/' }, ...fromIndex('en/archive/v2.0/index.md', { recurse: true })] }
           ],
           '/en/': [
             { text: 'English', items: [
               { text: 'Overview', link: '/en/' },
+              { text: 'CODE v5.0', link: '/en/code/' },
               { text: 'Archive: En v2.0', link: '/en/archive/v2.0/' }
             ] }
           ]

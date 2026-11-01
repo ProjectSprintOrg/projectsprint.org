@@ -19,8 +19,8 @@ const VERSIONS_JA = [
   { text: 'v2.2', link: '/archive/v2.2/' }
 ]
 const VERSIONS_EN = [
-  { text: 'v5.0', note: 'current, Japanese', link: '/code/' },
-  { text: 'v2.0', note: 'English', link: '/en/archive/v2.0/' }
+  { text: 'v5.0', note: 'current', link: '/en/code/' },
+  { text: 'v2.0', note: 'archived', link: '/en/archive/v2.0/' }
 ]
 const versions = computed(() => (isEn.value ? VERSIONS_EN : VERSIONS_JA))
 
