@@ -3,6 +3,7 @@ import { h } from 'vue'
 import ArchiveNotice from './ArchiveNotice.vue'
 import VersionFooter from './VersionFooter.vue'
 import TranslationNotice from './TranslationNotice.vue'
+import NotFound from './NotFound.vue'
 import './custom.css'
 
 export default {
@@ -10,7 +11,8 @@ export default {
   Layout() {
     return h(DefaultTheme.Layout, null, {
       'doc-before': () => [h(ArchiveNotice), h(TranslationNotice)],
-      'doc-after': () => h(VersionFooter)
+      'doc-after': () => h(VersionFooter),
+      'not-found': () => h(NotFound)
     })
   }
 }
