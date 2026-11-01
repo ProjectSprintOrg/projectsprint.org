@@ -8,3 +8,13 @@
 .vp-doc { line-height: 1.85; }
 .vp-doc h2 { margin-top: 56px; }
 .vp-doc img { border-radius: 4px; }
+
+/* スマホ：ホームの見出しと本文の余白 */
+@media (max-width: 639px) {
+  .VPHero .name, .VPHero .text { font-size: 28px !important; line-height: 1.35 !important; }
+  .VPHero .tagline { font-size: 15px !important; line-height: 1.8 !important; }
+  .VPHero .image-container { transform: scale(0.8); }
+  .vp-doc { font-size: 15.5px; }
+  .vp-doc h1 { font-size: 26px; line-height: 1.4; }
+  .vp-doc h2 { font-size: 21px; margin-top: 40px; }
+}

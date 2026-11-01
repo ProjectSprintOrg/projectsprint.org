@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { useData, useRoute } from 'vitepress'
 import { useSidebar } from 'vitepress/theme'
 import type { DefaultTheme } from 'vitepress'
@@ -42,6 +42,16 @@ const columns = computed<Col[]>(() => {
 })
 const show = computed(() => frontmatter.value.layout !== 'home' && columns.value.length > 0)
 
+// スマホでは構成一覧が縦に長くなるので、折りたたんで表示する（PC では常に展開）
+const isDesktop = ref(true)
+const expanded = ref(false)
+onMounted(() => {
+  const mq = window.matchMedia('(min-width: 768px)')
+  const apply = () => { isDesktop.value = mq.matches }
+  apply()
+  mq.addEventListener('change', apply)
+})
+
 const current = computed(() => route.path.replace(base, '').replace(/\.html$/, ''))
 const isCurrent = (link?: string) => !!link && current.value === link.replace(/\/$/, '') + (link.endsWith('/') ? '/' : '')
 const href = (link?: string) => `${base}${link ?? ''}`
@@ -49,7 +59,11 @@ const href = (link?: string) => `${base}${link ?? ''}`
 
 <template>
   <footer v-if="show" class="version-footer">
-    <div class="version-footer__structure">
+    <button v-if="!isDesktop" type="button" class="version-footer__toggle" :aria-expanded="expanded" @click="expanded = !expanded">
+      <span>{{ isEn ? 'Contents of this version' : 'このバージョンの構成' }}</span>
+      <span class="version-footer__chevron" :class="{ 'is-open': expanded }" aria-hidden="true">›</span>
+    </button>
+    <div v-show="isDesktop || expanded" class="version-footer__structure">
       <div v-for="(col, i) in columns" :key="i" class="version-footer__group">
         <div v-if="col.title" class="version-footer__title">{{ col.title }}</div>
         <ul>
@@ -77,6 +91,26 @@ const href = (link?: string) => `${base}${link ?? ''}`
   border-top: 1px solid var(--vp-c-divider);
   font-size: 13px;
   line-height: 1.7;
+}
+.version-footer__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  cursor: pointer;
+}
+.version-footer__chevron { display: inline-block; font-size: 20px; line-height: 1; transition: transform .2s; }
+.version-footer__chevron.is-open { transform: rotate(90deg); }
+@media (max-width: 767px) {
+  .version-footer__structure { margin-top: 8px; }
+  .version-footer__versions { margin-top: 16px; }
+  .version-footer__more { margin-left: 0; flex-basis: 100%; }
 }
 .version-footer__structure {
   display: grid;
