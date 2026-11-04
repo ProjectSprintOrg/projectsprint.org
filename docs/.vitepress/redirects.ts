@@ -93,9 +93,11 @@ export function writeRedirects(outDir: string, base: string) {
 <body><p>このページは移動しました。<a href="${target}">${target}</a></p>
 <script>location.replace(${JSON.stringify(target)})</script></body></html>
 `
+    // 実ページ（x.html または x/index.html）が存在する旧パスには転送ページを作らない
+    const isReal = (f: string) => fs.existsSync(f) && !fs.readFileSync(f, 'utf8').includes('http-equiv="refresh"')
+    if (isReal(path.join(outDir, `${old}.html`)) || isReal(path.join(outDir, old, 'index.html'))) continue
     for (const file of [`${old}.html`, `${old}/index.html`]) {
       const abs = path.join(outDir, file)
-      if (fs.existsSync(abs) && !fs.readFileSync(abs, 'utf8').includes('http-equiv="refresh"')) continue // 実ページを上書きしない
       fs.mkdirSync(path.dirname(abs), { recursive: true })
       fs.writeFileSync(abs, html)
       count++
