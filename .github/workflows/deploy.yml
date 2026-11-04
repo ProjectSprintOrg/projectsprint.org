@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - claude/jolly-wozniak-wh5677   # プレビュー用。本番運用時は main のみにする
   workflow_dispatch:
 
 permissions:
@@ -33,9 +32,8 @@ jobs:
       - run: npm ci
       - run: npm run docs:build
         env:
-          # 本番（main）は独自ドメイン www.projectsprint.org のルートで配信するので base は /。
-          # プレビュー用ブランチは projectsprintorg.github.io/projectsprint.org/ 配下なのでサブパス。
-          VITEPRESS_BASE: ${{ github.ref == 'refs/heads/main' && '/' || '/projectsprint.org/' }}
+          # 本番は独自ドメイン www.projectsprint.org のルートで配信する
+          VITEPRESS_BASE: /
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
