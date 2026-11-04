@@ -8,12 +8,19 @@ Project Sprint の理解は、読むことだけでは成立しません。そ�
 
 ## 体験型 Project Sprint
 
-このワークショップでは、プロジェクトを推進するフレームワーク「Project Sprint」を、おひとりで体験していただけます。所要時間は 15 分ほどです。
+このワークショップは、会場に集まる催しではありません。Google の AI チャット「Gemini」の上で、AI と対話しながらおひとりで進める自習型の体験です。申し込みや日程はなく、いつでも始められます。
 
-<a class="workshop-cta" href="https://gemini.google.com/gem/1sSD-IgnFHhASaWH52fsn3dHWkyMg9J9L?usp=sharing" target="_blank" rel="noopener">Workshop を始める（Gemini）</a>
+| | |
+| --- | --- |
+| 形式 | Gemini の「Gem」（Project Sprint 用に設定した AI チャット）との対話 |
+| 進め方 | 画面の案内に沿って、小さなプロジェクトの探索と収束を実際にやってみる |
+| 所要時間 | 目安は 15 分ほど。対話をじっくり進めると、もう少しかかることがあります |
+| 必要なもの | ご自身の Google アカウント |
+| 費用 | 無料 |
 
-> [!NOTE]
-> 体験するにはご自身の Google アカウントが必要です。Workshop は Google Gemini の Gem として提供しています。
+下のボタンを押すと、Google Gemini のサイト（外部サイト）が新しいタブで開きます。
+
+<a class="workshop-cta" href="https://gemini.google.com/gem/1sSD-IgnFHhASaWH52fsn3dHWkyMg9J9L?usp=sharing" target="_blank" rel="noopener">Gemini で Workshop を始める ↗</a>
 
 ## 体験したあとに
 

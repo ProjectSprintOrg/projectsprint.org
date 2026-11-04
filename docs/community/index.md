@@ -1,4 +1,4 @@
-# Community
+# Community とは
 
 Project Sprint は、[CC BY-SA 4.0 ライセンス](./license)で提供されるオープンなフレームワークで、有志のメンバーたちによる定義と改善を繰り返してかたちづくられています。Project Sprint プロジェクトならびに GitHub リポジトリでは、Project Sprint に興味を持ち、アップデートに貢献してくれる仲間を募集しています。
 

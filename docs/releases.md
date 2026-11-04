@@ -8,8 +8,9 @@ Project Sprint の各バージョンの変更内容です。v5.0 以降は GitHu
 
 ## CODE
 
-### [v5.0](https://github.com/ProjectSprintOrg/projectsprint.org/releases/tag/v5.0)
+### v5.0
 
+- [GitHub のリリースページ](https://github.com/ProjectSprintOrg/projectsprint.org/releases/tag/v5.0)
 **v5.0 (June 18th, 2026)**
 
 Project Sprint v5.0 では、これまでの Project Sprint の実践を踏まえ、フレームワーク全体を根本から再構成しました。
@@ -28,8 +29,9 @@ v4 系では「出力」を中心にプロジェクトを捉え直し、定例�
   * Step0 では主体性、誠実さ、責任、自律といった個人の姿勢を、Step1 では信頼、応答、役割分担といったチームとしての関わり方を整理
 * ドキュメント構成を Introduction / Step0 / Step1 / Key Terms / Practical Guide に再編
 
-### [v4.3-transition](https://github.com/ProjectSprintOrg/projectsprint.org/releases/tag/v4.3-transition)
+### v4.3-transition
 
+- [GitHub のリリースページ](https://github.com/ProjectSprintOrg/projectsprint.org/releases/tag/v4.3-transition)
 **v4.3-transition (February 6th, 2025)**
 
 v4.3 を最新版として、[旧リポジトリ](https://github.com/copilot-jp/project-sprint)から移管しました。主な目的は以下の 3 点です。
@@ -38,8 +40,9 @@ v4.3 を最新版として、[旧リポジトリ](https://github.com/copilot-jp/
 * 無秩序になりがちであったコミットログを、より意図と差分の分かりやすいものにすること
 * GitBook のフォーマットに合わせていた文書体系を、より必要な情報にアクセスしやすいものにすること
 
-### [v4.3](https://github.com/copilot-jp/project-sprint/blob/master/JA/v4.3)
+### v4.3
 
+- [当時の文書（旧リポジトリ）](https://github.com/copilot-jp/project-sprint/blob/master/JA/v4.3)
 **v4.3 (January 11th, 2024)**
 
 v4.3では、出力と対話のサイクルがプロジェクトを推進することをより強調しました。そのために定例会議を活用して行動を習慣化することが重要であるとの前提に立ち、主に Framework を改稿しました。また、Practical Guideのドキュメント版コンテンツとして、「タスクとアクション」を追加しました。その他細かい更新箇所は以下の通りです。
@@ -59,8 +62,9 @@ v4.3では、出力と対話のサイクルがプロジェクトを推進する�
   * その他
     * 表記揺れ・誤字脱字・リンク切れ対応
 
-### [v4.2](https://github.com/copilot-jp/project-sprint/blob/master/JA/v4.2)
+### v4.2
 
+- [当時の文書（旧リポジトリ）](https://github.com/copilot-jp/project-sprint/blob/master/JA/v4.2)
 **v4.2 (September 20th, 2023)**
 
 v4.2では、プロジェクトストーリーとフラッグの概念を追加しました。チームが統合的な行動を取るために、目的達成までの過程をシンプルな要素で表現できるようにすることが狙いです。その他細かい更新箇所は以下の通りです。
@@ -79,8 +83,9 @@ v4.2では、プロジェクトストーリーとフラッグの概念を追加�
   * その他
     * 表記揺れ・誤字脱字・リンク切れ対応
 
-### [v4.1](https://github.com/copilot-jp/project-sprint/blob/master/JA/v4.1)
+### v4.1
 
+- [当時の文書（旧リポジトリ）](https://github.com/copilot-jp/project-sprint/blob/master/JA/v4.1)
 **v4.1 (July 6th, 2023)**
 
 * JA
@@ -94,8 +99,9 @@ v4.2では、プロジェクトストーリーとフラッグの概念を追加�
   * Framework
     * 活動と対話の概念やプロジェクト推進の3つの仕組みの考え方の導入、価値と成果に関する考え方の変化に基づき大幅に追記修正
 
-### [v4.0](https://github.com/copilot-jp/project-sprint/blob/master/JA/v4.0)
+### v4.0
 
+- [当時の文書（旧リポジトリ）](https://github.com/copilot-jp/project-sprint/blob/master/JA/v4.0)
 v4では、Project Sprint がこれまでも重視してきた「作成物を生む」という行為により重点を置き、プロジェクトを「出力」と「成果」の関係から捉えなおしました。このことにより、以下のような効果を期待しています。
 
 * 作成物を小さく確実に生み出し続けることを重視することで、プロジェクトの推進と最適化がよりスムーズに行えるようになる
@@ -117,8 +123,9 @@ v4では、Project Sprint がこれまでも重視してきた「作成物を生
   * Frameworkを全体アップデート
   * v3.3内のタイポや表記揺れを整理
 
-### [v3.3](https://github.com/copilot-jp/project-sprint/blob/master/JA/v3.3)
+### v3.3
 
+- [当時の文書（旧リポジトリ）](https://github.com/copilot-jp/project-sprint/blob/master/JA/v3.3)
 **v3.3.0 (July 6th, 2022)**
 
 * JA
@@ -139,8 +146,9 @@ v4では、Project Sprint がこれまでも重視してきた「作成物を生
 
 * タイポ修正、表記調整
 
-### [v3.2](https://github.com/copilot-jp/project-sprint/blob/master/JA/v3.2)
+### v3.2
 
+- [当時の文書（旧リポジトリ）](https://github.com/copilot-jp/project-sprint/blob/master/JA/v3.2)
 **v3.2.0 (May 31st, 2022)**
 
 * JA
@@ -156,8 +164,9 @@ v4では、Project Sprint がこれまでも重視してきた「作成物を生
   * コントリビューターとしての参加の方法uodate
   * 「プロジェクトの環境整備」参照元の明確化
 
-### [v3.1](https://github.com/copilot-jp/project-sprint/blob/master/JA/v3.1)
+### v3.1
 
+- [当時の文書（旧リポジトリ）](https://github.com/copilot-jp/project-sprint/blob/master/JA/v3.1)
 **v3.1.0 (May 4th, 2022）**
 
 * JA
@@ -171,8 +180,9 @@ v4では、Project Sprint がこれまでも重視してきた「作成物を生
 * JA
   * バージョンを上げる際のディレクトリ作成・命名ルールの変更（パッチ及びリビジョンの際はURL不変）
 
-### [v3.0](https://github.com/copilot-jp/project-sprint/blob/master/JA/v3.0)
+### v3.0
 
+- [当時の文書（旧リポジトリ）](https://github.com/copilot-jp/project-sprint/blob/master/JA/v3.0)
 **v3.0.0-alpha (Dec 20th, 2021）**
 
 * JA
@@ -188,8 +198,9 @@ v4では、Project Sprint がこれまでも重視してきた「作成物を生
 * JA
   * リンク切れ箇所の調整、不要ファイル削除、Ja-v3.0.0-alphaの一部ファイルがJa-v3.0.0のものと置き換わっていたのを元に戻す等の対応を行いました。
 
-### [v2.2](https://github.com/copilot-jp/project-sprint/blob/master/JA/v2.2)
+### v2.2
 
+- [当時の文書（旧リポジトリ）](https://github.com/copilot-jp/project-sprint/blob/master/JA/v2.2)
 **v2.2.0 (Sep 28th, 2021)**
 
 * JA

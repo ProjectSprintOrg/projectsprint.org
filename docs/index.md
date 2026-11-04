@@ -23,9 +23,9 @@ hero:
 
 features:
   - title: Workshop
-    details: 探索と収束のリズムを、おひとりで15分ほど体験できます。まず体験し、あとから意味づけるのが Project Sprint の順序です。
+    details: Google の AI（Gemini）と対話しながら、ひとりで進める自習型のワークショップです。申し込みや日程はありません。まず体験し、あとから意味づけるのが Project Sprint の順序です。
     link: /workshop/
-    linkText: ワークショップへ
+    linkText: Workshop の案内へ
   - title: CODE
     details: 体験を言語化し、構造として理解するための文書群。Introduction、Step0、Step1、Key Terms で構成されています。
     link: /code/

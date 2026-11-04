@@ -132,31 +132,28 @@ export default defineConfig({
                 { text: 'Step1. 他者と世界の認識を分かち合う', link: '/code/step1' },
                 { text: 'Key Terms', link: '/code/keyterms' }
               ]
-            },
-            { text: 'Practical Guide', link: '/practical-guide/' },
-            { text: '過去バージョン', link: '/archive/' }
+            }
           ],
           '/practical-guide/': [
             {
               text: 'Practical Guide（CODE v4 準拠）',
               items: [
                 { text: 'Practical Guide とは', link: '/practical-guide/' },
-                { text: 'Minimum Guide', link: '/practical-guide/minimum_guide' },
+                { text: 'Project Sprint Minimum Guide', link: '/practical-guide/minimum_guide' },
                 { text: 'ジョブとアクション', link: '/practical-guide/job_and_action' },
                 { text: 'フラッグの要素', link: '/practical-guide/elements_of_flag' }
               ]
-            },
-            { text: 'CODE v5.0', link: '/code/' }
+            }
           ],
           '/community/': [
             {
               text: 'Community',
               items: [
-                { text: 'Project Sprint づくりに参加する', link: '/community/' },
+                { text: 'Community とは', link: '/community/' },
                 { text: '質問・提案・貢献の方法', link: '/community/contributing' },
                 { text: 'メンバー', link: '/community/maintainers' },
                 { text: '関連サービス', link: '/community/ecosystem' },
-                { text: '行動規範', link: '/community/code-of-conduct' },
+                { text: 'コントリビューター行動規範', link: '/community/code-of-conduct' },
                 { text: 'ライセンス', link: '/community/license' },
                 { text: 'このサイトについて', link: '/community/colophon' }
               ]
@@ -186,7 +183,7 @@ export default defineConfig({
           ],
           '/archive/': [
             { text: '過去バージョン', items: [
-              { text: '一覧', link: '/archive/' },
+              { text: '過去バージョンについて', link: '/archive/' },
               { text: 'v4.3', link: '/archive/v4.3/' },
               { text: 'v3.3', link: '/archive/v3.3/' },
               { text: 'v2.2', link: '/archive/v2.2/' }

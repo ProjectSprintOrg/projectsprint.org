@@ -1,4 +1,4 @@
-# Practical Guide
+# Practical Guide とは
 
 > [!NOTE]
 > この Practical Guide は **CODE v4 準拠**です。CODE v5.0 に合わせた改訂は今後の課題として、現時点では v4 で定義した「出力」「定例会議」「ジョブとアクション」の考え方をそのまま実践の手引きとして提供しています。v5 の文書は [CODE](/code/) をご覧ください。
@@ -7,9 +7,11 @@ Project Sprint の効果を実感し理解を深めるためには、プロジ�
 
 一般化され抽象度の高い CODE に比べて、より実践的な Practical Guide はプロジェクトにおける実践知をタイムリーに取り込みやすく、CODE よりも早い速度で姿を変えていきます。そのため、CODE ほど細かくバージョン管理を行わず、CODE の各メジャーバージョンに準拠した Practical Guide として運用しています。
 
-## [ビジュアル版・プラクティカルガイド](https://miro.com/app/board/uXjVMX-zl6s=/)（Miro）
+## ビジュアル版・プラクティカルガイド
 
-Project Sprint の原理を、スライドをベースにビジュアル化して分かりやすく解説しています。プロジェクトの具体的な立ち上げ方・進め方を説明することで、Project Sprint のフレームワークに沿ったプロジェクト推進をサポートします。
+Project Sprint の原理を、スライドをベースにビジュアル化して分かりやすく解説しています。プロジェクトの具体的な立ち上げ方・進め方を説明することで、Project Sprint のフレームワークに沿ったプロジェクト推進をサポートします。Miro（外部サイト）で公開しています。
+
+- [ビジュアル版・プラクティカルガイドを Miro で開く](https://miro.com/app/board/uXjVMX-zl6s=/)
 
 ## ドキュメント版・プラクティカルガイド
 
@@ -24,4 +26,4 @@ Minimum Guide では、Project Sprint を実際に体験するために必要な
 
 ## Project Sprint に基づいて設計されたサービス
 
-[Community の関連サービス](/community/ecosystem) をご覧ください。
+- [関連サービス（Community）](/community/ecosystem)

@@ -2,9 +2,11 @@
 
 Project Sprint に基づいて設計されたサービスです。
 
-## [SuperGoodMeetings](https://supergoodmeetings.com/)
+## SuperGoodMeetings
 
 定例会議を最適な形で実施することで自律的なプロジェクト推進をサポートするクラウドサービスです。
+
+- [SuperGoodMeetings のサイト](https://supergoodmeetings.com/)
 
 ---
 

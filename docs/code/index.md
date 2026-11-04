@@ -1,4 +1,4 @@
-# CODE
+# CODE とは
 
 **CODE** とは、Project Sprint について説明した文書群の総称です。Project Sprint の考え方と構造を言語化したもので、Workshop での体験に意味を与え、実践における判断の基準を与えることを役割としています。
 
