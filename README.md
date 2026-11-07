@@ -62,6 +62,10 @@ npm run docs:dev
 
 本番と同じ静的ファイルを生成するには `npm run docs:build` を実行します（出力先は `docs/.vitepress/dist/`）。
 
+## 🤝 クレジット
+
+Project Sprint は、2020 年に[株式会社コパイロツト](https://copilot.jp/)（COPILOT Inc.）が起点となって公開され、2025 年に Project Sprint Org へ移管されました。コパイロツトは現在も、メンテナーの参加や週次ミーティングの運営を通じて Project Sprint の発展に協力しています。
+
 ## 📄 ライセンス
 
 - 文書（`docs/` 配下の Markdown・画像・翻訳）: [CC BY-SA 4.0](LICENSE.md)

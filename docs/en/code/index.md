@@ -20,6 +20,10 @@ CODE is divided into three Steps, ordered by the depth of understanding each req
 
 If you have not yet experienced Project Sprint, we recommend going through the [Workshop](https://gemini.google.com/gem/1sSD-IgnFHhASaWH52fsn3dHWkyMg9J9L?usp=sharing) first. The Workshop is currently available in Japanese only. After reading CODE, continue to the Practical Guide (currently Japanese only) to apply Project Sprint to a real project.
 
+## Credits
+
+Project Sprint originated at [COPILOT Inc.](https://copilot.jp/) (Tokyo) in 2020 and was transferred to Project Sprint Org in 2025. COPILOT continues to support the project through its maintainers and the weekly meetings.
+
 ## About This Translation
 
 This English edition is an AI-assisted translation of the Japanese original. It has not yet been reviewed by a native English speaker, and we are looking for reviewers: if you read English and have practiced Project Sprint, your corrections are welcome through "Edit this page on GitHub" on any page. The Japanese text is the authoritative version. Each page carries a notice to that effect at the top. See the translator's notes on the [Key Terms](./keyterms) page for how the central Japanese terms were rendered.
