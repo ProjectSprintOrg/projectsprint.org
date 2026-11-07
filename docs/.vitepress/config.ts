@@ -249,8 +249,8 @@ export default defineConfig({
     search: { provider: 'local' },
     socialLinks: [{ icon: 'github', link: repo }],
     footer: {
-      message: '文書は <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">CC BY-SA 4.0</a> で公開しています。 · <a href="' + base + 'community/colophon">このサイトについて</a>',
-      copyright: '© 2020–2026 Project Sprint Org and contributors'
+      message: '© 2020–2026 Project Sprint Org and contributors.',
+      copyright: '文書は <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">CC BY-SA 4.0</a>、サイトのコードは <a href="https://github.com/ProjectSprintOrg/projectsprint.org/blob/main/LICENSE-CODE.md">MIT</a> で公開しています。 · <a href="' + base + 'community/colophon">このサイトについて</a>'
     }
   }
 })

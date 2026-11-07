@@ -1,40 +1,45 @@
 # Project Sprint
 
 <p align="center">
-  <img src='CODE/v4/.3_ja/images/pjs_og.png' width=600>
+  <img src='docs/public/pjs_og.png' width=600>
 </p>
-
-## 📍 Project Sprint とは
 
 Project Sprint は、不確実な状況においてプロジェクトを前進させるためのフレームワークです。
 
-Project Sprint では、プロジェクトを「あらかじめ定めた正解を実行する活動」ではなく、「行動を通じて理解を更新し、価値を探索する活動」と捉えます。
-
-世界は変化しつづけています。環境や要求は常に変化し、将来を完全に予測することはできません。そのような状況において、プロジェクトを前進させるためには、計画だけでなく、行動によって得られた出力と、それをもとにした対話が必要になります。
-
-Project Sprint は、探索と収束のリズムを通じて、多様な個人の行動をチームとして統合し、価値の実現へとつなげる仕組みを提供します。
+Project Sprint では、プロジェクトを「あらかじめ定めた正解を実行する活動」ではなく、「行動を通じて理解を更新し、価値を探索する活動」と捉えます。探索と収束のリズムを通じて、多様な個人の行動をチームとして統合し、価値の実現へとつなげる仕組みを提供します。
 
 本リポジトリでは、Project Sprint をオープンソースのフレームワークとして公開しています。
 
-▼ 現在の最新ドキュメント
+## 📍 サイト
 
-* v5.0  
-  *  [Introduction](CODE/v5/v5_0_ja/introduction.md) ：まずは Project Sprint の全体像を把握しよう
-  *  [Step0](CODE/v5/v5_0_ja/step0.md) ：個人としてどのように探索に参加するかを理解しよう
-  *  [Step1](CODE/v5/v5_0_ja/step1.md) ：チームとしてどのように探索を進めるかを理解しよう
-  *  [Key Terms](CODE/v5/v5_0_ja/keyterms.md) ：主要な用語の定義を確認しよう
+**https://www.projectsprint.org/**
+
+このリポジトリの `docs/` 配下の Markdown がサイトのソースです。`main` にマージされた変更は、GitHub Actions によって自動的にサイトへ反映されます。
+
+| 内容 | サイト | ソース |
+| --- | --- | --- |
+| Workshop（体験する） | [/workshop/](https://www.projectsprint.org/workshop/) | `docs/workshop/` |
+| CODE v5.0（理解する） | [/code/](https://www.projectsprint.org/code/) | `docs/code/` |
+| Practical Guide（実践する） | [/practical-guide/](https://www.projectsprint.org/practical-guide/) | `docs/practical-guide/` |
+| Community | [/community/](https://www.projectsprint.org/community/) | `docs/community/`, `CONTRIBUTING.md` |
+| Release Notes | [/releases](https://www.projectsprint.org/releases) | `docs/releases.md` |
+| 過去バージョン（v4.3 / v3.3 / v2.2） | [/archive/](https://www.projectsprint.org/archive/) | `docs/archive/` |
+| English（CODE v5.0 の英訳、En v2.0） | [/en/](https://www.projectsprint.org/en/) | `docs/en/` |
+
+▼ 現在の最新ドキュメント（v5.0）
+
+* [Introduction](docs/code/introduction.md)：まずは Project Sprint の全体像を把握しよう
+* [Step0](docs/code/step0.md)：個人としてどのように探索に参加するかを理解しよう
+* [Step1](docs/code/step1.md)：チームとしてどのように探索を進めるかを理解しよう
+* [Key Terms](docs/code/keyterms.md)：主要な用語の定義を確認しよう
 
 ▼ 体験型 Project Sprint
 
-* [Workshop](https://gemini.google.com/gem/1sSD-IgnFHhASaWH52fsn3dHWkyMg9J9L?usp=sharing) <br>
-  このワークショップでは、プロジェクトを推進するフレームワーク「Project Sprint」を、おひとりで体験していただけます。所要時間は15分ほどです。
-  ※体験するにはご自身のGoogleアカウントが必要です
+* [Workshop](https://www.projectsprint.org/workshop/)：Google Gemini 上でひとりで進める自習型の体験（目安 15 分、Google アカウントが必要）
 
 ## 🙆‍♂️ こんな方におすすめ
 
-Project Sprint は、プロジェクトを「価値を探索しつづける活動」と捉える人のためのフレームワークです。
-
-もしあなたが、現在のプロジェクトにおいて次のような感覚を持っているなら、Project Sprint は新しい視点を提供できるかもしれません。
+Project Sprint は、プロジェクトを「価値を探索しつづける活動」と捉える人のためのフレームワークです。もしあなたが、現在のプロジェクトにおいて次のような感覚を持っているなら、Project Sprint は新しい視点を提供できるかもしれません。
 
 - 計画どおりに進めることよりも、本当に価値のあるものを実現したい
 - 環境や要求の変化に振り回されるのではなく、それらを踏まえて前進したい
@@ -42,16 +47,22 @@ Project Sprint は、プロジェクトを「価値を探索しつづける活�
 - 管理や指示によってではなく、自律的な協働によってチームを動かしたい
 - 今のプロジェクトの進め方に違和感があり、別の可能性を探している
 
-Project Sprint は、多くのプロジェクトに汎用的に適用可能です。
+※ Project Sprint におけるプロジェクトの捉え方について、さらに詳しくは [Introduction](docs/code/introduction.md) をご覧ください。
 
-しかし、要求と実現方法の両方が明確であり、計画どおりの実行が期待できる状況においては、Project Sprint を用いる必要性は高くないかもしれません。
+## 🛠 Project Sprint づくりに参加する
 
-一方で、要求や実現方法のいずれかが不明確である場合や、状況の変化に応じて判断を更新する必要がある場合には、探索が必要です。
+質問・提案・貢献の方法は [CONTRIBUTING.md](CONTRIBUTING.md) をご覧ください。
 
-- 目指す成果が明確であっても、その実現方法が分からない
-- 実現方法が明確であっても、要求や価値そのものが変化する
+## 💻 サイトをローカルで確認する
 
-Project Sprint は、このような探索が必要な状況において、探索と収束を繰り返しながら前進するためのフレームワークです。
+```bash
+npm ci
+npm run docs:dev
+```
 
-※ Project Sprint におけるプロジェクトの捉え方について、さらに詳しくは[こちら](CODE/v5/v5_0_ja/introduction.md)をご覧ください。<br>
-※ Project Sprint の構築に参加するには、[こちら](https://github.com/ProjectSprintOrg/projectsprint.org/wiki/Question-and-Suggestion)をご参照ください。
+本番と同じ静的ファイルを生成するには `npm run docs:build` を実行します（出力先は `docs/.vitepress/dist/`）。
+
+## 📄 ライセンス
+
+- 文書（`docs/` 配下の Markdown・画像・翻訳）: [CC BY-SA 4.0](LICENSE.md)
+- サイトを生成するプログラムと設定（`docs/.vitepress/`、`.github/`、`package.json`）: [MIT](LICENSE-CODE.md)
