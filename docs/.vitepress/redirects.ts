@@ -48,7 +48,10 @@ export function mapOldPath(old: string): string {
     releasenotes: '/releases',
     releasemanagement: '/releases',
     'practical-guide': '/practical-guide/',
-    'practical-guide/task_and_action': '/practical-guide/job_and_action',
+    'practical-guide/task_and_action': '/practical-guide/job-and-action',
+    'practical-guide/job_and_action': '/practical-guide/job-and-action',
+    'practical-guide/minimum_guide': '/practical-guide/minimum-guide',
+    'practical-guide/elements_of_flag': '/archive/v4.3/definitions',
     oldversions: '/archive/',
     'oldversions/v2_2_0': '/archive/v2.2/',
     'ja/v3.3/theories/ibento': '/archive/v3.3/theories/restrictions'

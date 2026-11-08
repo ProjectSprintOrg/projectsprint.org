@@ -17,12 +17,11 @@ Project Sprint の原理を、スライドをベースにビジュアル化し�
 
 Minimum Guide では、Project Sprint を実際に体験するために必要な最小限の具体的な行動を記載しています。
 
-- [Project Sprint Minimum Guide](./minimum_guide)
+- [Project Sprint Minimum Guide](./minimum-guide)
 
 以下は Framework の記述を踏まえ、追加で理解しておくとよい概念や実践の際の考え方を説明したドキュメント群です。
 
-- [ジョブとアクション](./job_and_action)
-- [フラッグの要素](./elements_of_flag)
+- [ジョブとアクション](./job-and-action)
 
 ## Project Sprint に基づいて設計されたサービス
 

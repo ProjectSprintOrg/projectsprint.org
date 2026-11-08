@@ -331,6 +331,9 @@ oldversions/v2_2_0/ja/code/tips
 oldversions/v2_2_0/ja/code/tutorial
 oldversions/v2_2_0/ja/code/tutorial/section1-1
 practical-guide
+practical-guide/elements_of_flag
+practical-guide/job_and_action
+practical-guide/minimum_guide
 practical-guide/task_and_action
 readme
 readme/ja/v4.0
