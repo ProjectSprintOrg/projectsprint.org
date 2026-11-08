@@ -23,14 +23,25 @@ const ARCHIVE_DATES: Record<string, string> = {
   'v2.0': '2021-07-15'
 }
 
-// md ファイルの git 上の最終コミット日時（ファイルの移動・改名を追跡する）
+// md ファイルの本文が最後に変わったコミットの日時（ファイルの移動・改名を追跡する）。
+// frontmatter（title / description など）だけを変えたコミットは本文の更新とみなさない
+const FRONTMATTER_LINE = /^[+-](\s*$|---\s*$|\s*[A-Za-z_-]+:(\s|$)|\s*- [A-Za-z_-]+:\s)/
 function contentUpdatedAt(file: string): number | undefined {
   try {
-    const out = execSync(`git log -1 --follow --diff-filter=AM --format=%at -- "${file}"`, {
+    const out = execSync(`git log --follow --diff-filter=AM --format=%x01%at -p -- "${file}"`, {
       cwd: path.resolve(__dirname, '../..'),
-      stdio: ['ignore', 'pipe', 'ignore']
-    }).toString().trim()
-    return out ? Number(out) * 1000 : undefined
+      stdio: ['ignore', 'pipe', 'ignore'],
+      maxBuffer: 64 * 1024 * 1024
+    }).toString()
+    for (const chunk of out.split('\x01').slice(1)) {
+      const nl = chunk.indexOf('\n')
+      const at = Number(chunk.slice(0, nl).trim())
+      const changed = chunk.slice(nl + 1).split('\n').some(
+        l => /^[+-]/.test(l) && !/^(\+\+\+|---) /.test(l) && !FRONTMATTER_LINE.test(l)
+      )
+      if (changed && at) return at * 1000
+    }
+    return undefined
   } catch {
     return undefined
   }
