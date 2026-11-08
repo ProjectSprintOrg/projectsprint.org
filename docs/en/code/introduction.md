@@ -1,3 +1,6 @@
+---
+description: "What Project Sprint means by \"project\", what it is trying to change, the value it provides, and how the Workshop, CODE and the Practical Guide relate. Start here to grasp the overall picture of Project Sprint."
+---
 # Introduction
 
 > [!NOTE]

@@ -1,3 +1,7 @@
+---
+title: CODE v4.3（アーカイブ）
+description: "Project Sprint CODE v4.3（2024 年 1 月）のアーカイブ。「出力」と「成果」の関係からプロジェクトを捉えなおした v4 系の最終版です。Introduction / Definitions / Framework で構成されています。"
+---
 # v4.3
 
 ![](images/documents.png)

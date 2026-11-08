@@ -1,3 +1,6 @@
+---
+description: "CODE は Project Sprint の考え方と構造を言語化した文書群です。最新版 v5.0 は Introduction、Step0、Step1、Key Terms で構成され、Workshop での体験に意味を与え、実践の判断基準を示します。"
+---
 # CODE とは
 
 **CODE** とは、Project Sprint について説明した文書群の総称です。Project Sprint の考え方と構造を言語化したもので、Workshop での体験に意味を与え、実践における判断の基準を与えることを役割としています。

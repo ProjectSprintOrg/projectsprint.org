@@ -34,6 +34,7 @@ features:
     details: 理解を実際のプロジェクトに接続するためのガイド。定例会議を起点にプロジェクトを前進させる最小限の行動から始められます。
     link: /practical-guide/
     linkText: Practical Guide へ
+description: "Project Sprint は、不確実な状況においてプロジェクトを前進させるためのオープンソースのフレームワークです。プロジェクトを「行動を通じて理解を更新し、価値を探索する活動」と捉え、探索と収束のリズムでチームを前進させます。"
 ---
 
 ## Project Sprint とは

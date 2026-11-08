@@ -1,6 +1,7 @@
 ---
 title: ライセンス
 lastUpdated: false
+description: "Project Sprint の文書は CC BY-SA 4.0、サイトのコードは MIT ライセンスで提供しています。CC BY-SA 4.0 のリーガル・コード全文を掲載しています。"
 ---
 # ライセンス
 

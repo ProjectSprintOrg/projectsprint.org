@@ -13,7 +13,7 @@ const isEn = computed(() => route.path.replace(base, '').startsWith('/en/'))
 
 // 言語ごとのバージョン一覧。英語版は言語切り替えの側に置き、日本語のバージョン一覧には混ぜない
 const VERSIONS_JA = [
-  { text: 'v5.0', note: '最新', link: '/code/' },
+  { text: 'v5.0', note: 'latest', link: '/code/' },
   { text: 'v4.3', link: '/archive/v4.3/' },
   { text: 'v3.3', link: '/archive/v3.3/' },
   { text: 'v2.2', link: '/archive/v2.2/' }
@@ -75,7 +75,7 @@ const href = (link?: string) => `${base}${link ?? ''}`
       </div>
     </div>
     <div class="version-footer__versions">
-      <span class="version-footer__label">{{ isEn ? 'Versions' : 'バージョン' }}</span>
+      <span class="version-footer__label">Versions</span>
       <a v-for="v in versions" :key="v.link" :href="href(v.link)">
         {{ v.text }}<small v-if="v.note">（{{ v.note }}）</small>
       </a>

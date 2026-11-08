@@ -18,3 +18,16 @@
   .vp-doc h1 { font-size: 26px; line-height: 1.4; }
   .vp-doc h2 { font-size: 21px; margin-top: 40px; }
 }
+
+/* Workshop ページの「Gemini で始める」ボタン */
+.workshop-cta {
+  display: inline-block;
+  margin: 8px 0 16px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: var(--vp-c-brand-1);
+  color: #fff !important;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+.workshop-cta:hover { background: var(--vp-c-brand-2); }

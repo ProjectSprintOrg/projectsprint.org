@@ -1,3 +1,6 @@
+---
+description: "Project Sprint の Workshop は、Google の AI「Gemini」と対話しながらひとりで進める自習型の体験です。申し込み不要・無料・目安 15 分。まず探索と収束のリズムを体験し、あとから CODE で意味づけます。"
+---
 # Workshop
 
 Project Sprint の理解は、読むことだけでは成立しません。その価値は、行動と体験を通じてはじめて認識されます。そのため Project Sprint では、可能な限り次の順序で理解と実践を進めることを推奨しています。
@@ -24,16 +27,3 @@ Project Sprint の理解は、読むことだけでは成立しません。そ�
 
 Workshop で起きていたことは、必ずしも明確な言葉として理解されるものではありませんが、行動と結果を通じた手応えとして残ります。[CODE](/code/) は、その体験に意味を与えるためのものです。Workshop のあとに [Introduction](/code/introduction) から読み進めてください。
 
-<style>
-.workshop-cta {
-  display: inline-block;
-  margin: 8px 0 16px;
-  padding: 10px 20px;
-  border-radius: 20px;
-  background: var(--vp-c-brand-1);
-  color: #fff !important;
-  font-weight: 600;
-  text-decoration: none !important;
-}
-.workshop-cta:hover { background: var(--vp-c-brand-2); }
-</style>

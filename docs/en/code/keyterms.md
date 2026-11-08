@@ -1,3 +1,6 @@
+---
+description: "Definitions of the main terms in Project Sprint CODE v5.0 (output, artifact, outcome, conviction, shared understanding, exploration and convergence, regular meeting, harvest festival, reflection) with translator's notes on the Japanese originals."
+---
 # Key Terms
 
 > [!NOTE]

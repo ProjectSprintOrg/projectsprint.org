@@ -1,3 +1,6 @@
+---
+description: "Project Sprint が扱う「プロジェクト」とは何か、何を変えようとしているのか、どのような価値を提供するのか。Workshop・CODE・Practical Guide の位置づけと、CODE の読み方を示します。"
+---
 # Introduction
 
 > [!NOTE]

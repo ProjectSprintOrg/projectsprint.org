@@ -1,3 +1,6 @@
+---
+description: "Project Sprint を実際に体験するために必要な最小限の行動をまとめた Minimum Guide。定例会議の設定、アジェンダの作り方、出力と成果の確認など、はじめの一歩を具体的に示します（CODE v4 準拠）。"
+---
 # Project Sprint Minimum Guide
 
 このページでは、Project Sprint を実際に体験するために必要な最小限の具体的な行動を記載しています。まずはこれらの行動を実践し、その上で「会議がうまく進んだ」「プロジェクトがよりよくなった」と感じた方は、ぜひ[ビジュアル版・プラクティカルガイド](https://miro.com/app/board/uXjVMX-zl6s=/)や[CODE](/code/)で、Project Sprint の原理を読み進め、さらなる実践へ繋げてください。
