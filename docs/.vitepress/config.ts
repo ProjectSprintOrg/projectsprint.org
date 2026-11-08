@@ -150,7 +150,7 @@ export default defineConfig({
           { text: 'Community', link: '/community/', activeMatch: '^/community/' },
           { text: 'Releases', link: '/releases' },
           {
-            text: 'バージョン',
+            text: 'Versions',
             items: [
               { text: 'v5.0（最新）', link: '/code/' },
               { text: 'v4.3', link: '/archive/v4.3/' },
