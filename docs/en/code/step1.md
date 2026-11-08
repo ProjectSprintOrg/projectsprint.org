@@ -202,7 +202,7 @@ In Project Sprint, for convenience, a project is sometimes perceived in terms of
 
   Looking at each activity in the project through each of these three aspects lets the team see the significance and effect of that activity within the project more accurately and from more sides. When this perception is shared by the project team, each member can adjust their own actions to the situation and contribute to the progress of the project as a whole.
 
-<img width="1440" height="1024" alt="The three aspects: progress, process, and teaming" src="https://github.com/user-attachments/assets/dada8279-0ba9-4bfd-b874-08124db8918b" />
+<img width="1440" height="1024" alt="The three aspects: progress, process, and teaming" src="../../code/images/domain.png" />
 
 ## Mindset: The Attitude of an Agent Sharing Exploration with Others
 

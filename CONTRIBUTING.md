@@ -19,7 +19,7 @@ Project Sprint は、[CC BY-SA 4.0 ライセンス](https://github.com/ProjectSp
 
 ## Issue の出し方
 
-[New issue](https://github.com/ProjectSprintOrg/projectsprint.org/issues/new) からご投稿いただければ、内容に応じてメンバーがサポートしたりフィードバックをお返ししたりします。
+[New issue](https://github.com/ProjectSprintOrg/projectsprint.org/issues/new/choose) からご投稿いただければ、内容に応じてメンバーがサポートしたりフィードバックをお返ししたりします。投稿の際は、内容に合ったテンプレート（質問／提案・修正／リンク切れ・表示の不具合／翻訳の指摘）を選んでください。
 
 ## Pull Request の出し方
 
@@ -40,6 +40,23 @@ Project Sprint は、[CC BY-SA 4.0 ライセンス](https://github.com/ProjectSp
 | Release Notes | `docs/releases.md` |
 | 過去バージョン（参照用。原則変更しない） | `docs/archive/`、`docs/en/archive/` |
 | 英語版 | `docs/en/` |
+
+## Release Notes について
+
+Release Notes の正本は [`docs/releases.md`](https://www.projectsprint.org/releases) です。各版の変更内容はここに書きます。
+
+GitHub の [Releases](https://github.com/ProjectSprintOrg/projectsprint.org/releases) には、タグと 2〜3 行の要約、`https://www.projectsprint.org/releases` へのリンクだけを書きます。変更内容の詳細を GitHub Releases 側に重ねて書くことはしません（二か所に書くと食い違いが生まれるため）。
+
+## 新しい版を出すときの手順
+
+1. `docs/code/` の文書を直接更新します。`v5_1` のような版ごとの新しいディレクトリは作りません。過去の版は git のタグで残します。
+2. `docs/releases.md` の先頭（「CODE」の節の最初）に、新しい版の節を追加します。
+3. `main` にマージしたら、そのマージコミットに版のタグ（例: `v5.1`）を打ちます。
+4. GitHub の [Releases](https://github.com/ProjectSprintOrg/projectsprint.org/releases) で、そのタグから Release を作り、2〜3 行の要約と `https://www.projectsprint.org/releases` へのリンクを書きます。
+5. メジャーバージョンが上がったとき（例: v5 → v6）だけ、前のメジャーの最終版（例: v5.3）を `docs/archive/vX.Y/` に複製し、次の箇所に追加します。
+   - サイドバーとナビゲーションの「バージョン」メニュー（`docs/.vitepress/config.ts`）
+   - ページ下部のバージョン一覧（`docs/.vitepress/theme/VersionFooter.vue`）
+   - 過去バージョンの一覧（`docs/archive/index.md`）
 
 ## 翻訳について
 

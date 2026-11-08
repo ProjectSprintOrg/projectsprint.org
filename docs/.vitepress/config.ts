@@ -178,9 +178,8 @@ export default defineConfig({
               text: 'Practical Guide（CODE v4 準拠）',
               items: [
                 { text: 'Practical Guide とは', link: '/practical-guide/' },
-                { text: 'Project Sprint Minimum Guide', link: '/practical-guide/minimum_guide' },
-                { text: 'ジョブとアクション', link: '/practical-guide/job_and_action' },
-                { text: 'フラッグの要素', link: '/practical-guide/elements_of_flag' }
+                { text: 'Project Sprint Minimum Guide', link: '/practical-guide/minimum-guide' },
+                { text: 'ジョブとアクション', link: '/practical-guide/job-and-action' }
               ]
             }
           ],

@@ -2,11 +2,17 @@
 import { computed } from 'vue'
 import { useData } from 'vitepress'
 
-const { frontmatter, site } = useData()
+const { frontmatter, site, page } = useData()
 const base = site.value.base.replace(/\/$/, '')
 const t = computed(() => frontmatter.value.translation as
   | { source: string; sourceDate?: string; outdated?: boolean }
   | undefined)
+// translation.yml の Issue テンプレートを開き、ページ URL 欄を埋めておく
+const issueUrl = computed(() => {
+  const path = page.value.relativePath.replace(/(^|\/)index\.md$/, '$1').replace(/\.md$/, '')
+  const pageUrl = `https://www.projectsprint.org/${path}`
+  return `https://github.com/ProjectSprintOrg/projectsprint.org/issues/new?template=translation.yml&page=${encodeURIComponent(pageUrl)}`
+})
 </script>
 
 <template>
@@ -16,7 +22,7 @@ const t = computed(() => frontmatter.value.translation as
       This page was translated from the Japanese original (CODE v5.0) with the help of AI. It has not yet been reviewed by a native English speaker.
       The <a :href="`${base}${t.source}`">Japanese text</a> is the authoritative version.
       If a passage reads wrongly or misses the meaning, please help: use "Edit this page on GitHub" below or
-      <a href="https://github.com/ProjectSprintOrg/projectsprint.org/issues/new" target="_blank" rel="noopener">open an issue</a>.
+      <a :href="issueUrl" target="_blank" rel="noopener">open an issue</a>.
     </p>
     <p v-if="t.outdated" class="translation-notice__outdated">
       <strong>The Japanese original was updated on {{ t.sourceDate }}</strong>, after this translation was last revised. This page may be behind the original.

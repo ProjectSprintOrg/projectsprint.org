@@ -86,8 +86,9 @@ onMounted(async () => {
   checking.value = false
 })
 
+// broken-link.yml の Issue テンプレートを開き、タイトルと URL 欄を埋めておく
 const issueUrl = () =>
-  `https://github.com/ProjectSprintOrg/projectsprint.org/issues/new?title=${encodeURIComponent('リンク切れ: ' + path.value)}&body=${encodeURIComponent(`次の URL が見つかりませんでした。\n\n${location.href}\n\nどこからリンクされていたか（分かれば）：\n`)}`
+  `https://github.com/ProjectSprintOrg/projectsprint.org/issues/new?template=broken-link.yml&title=${encodeURIComponent('リンク切れ: ' + path.value)}&url=${encodeURIComponent(location.href)}`
 </script>
 
 <template>

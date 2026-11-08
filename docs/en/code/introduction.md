@@ -122,7 +122,7 @@ Note that CODE is divided into three Steps, ordered by the depth of understandin
 Step2 deals with how, as a result of that exploration, the team generates value and brings change to society.<br>
 (Step2 will be written in v5.1 or later and is not included as of v5.0.)
 
-<img width="1535" height="1024" alt="The three Steps of CODE" src="https://github.com/user-attachments/assets/e9da1cc1-e27d-4c10-a1d5-74a9260f03b7" />
+<img width="1535" height="1024" alt="The three Steps of CODE" src="../../code/images/step.png" />
 
 Project Sprint has a structure that begins with individual action, passes through exploration as a team, and arrives at the realization of value. This document is organized so that this process can be understood step by step.
 

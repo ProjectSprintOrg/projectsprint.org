@@ -1,0 +1,34 @@
+name: リンク切れ・表示の不具合
+description: ページが見つからない、リンクが切れている、表示が崩れているなどを報告する
+title: "リンク切れ: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        サイト（https://www.projectsprint.org/）のリンク切れや表示の不具合を報告してください。
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: 開けなかった・表示がおかしかったページの URL
+      placeholder: https://www.projectsprint.org/...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待した内容
+      description: そのページで見られると思っていた内容、または正しい表示
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際に起きたこと
+      description: 404 になった、画像が表示されない、など。スクリーンショットがあれば貼ってください。
+  - type: input
+    id: referrer
+    attributes:
+      label: どこからリンクされていたか（分かれば）
+      placeholder: 他のページの URL、検索結果、ブックマークなど

@@ -1,0 +1,28 @@
+name: 提案・修正
+description: 記述の改善、追記、修正を提案する
+title: "[提案] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        記述の改善や追記の提案、実践してみて気づいた点をお寄せください。誤字脱字など具体的な修正は Pull Request でも歓迎します。
+  - type: input
+    id: page
+    attributes:
+      label: 対象のページ（あれば）
+      placeholder: https://www.projectsprint.org/code/step1
+  - type: textarea
+    id: current
+    attributes:
+      label: 現状と課題
+      description: 今の記述のどこに、どのような課題があると感じたか
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 提案
+      description: どのように変えるとよいか。案があれば具体的な文案も
+    validations:
+      required: true
