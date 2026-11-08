@@ -81,7 +81,7 @@ In Project Sprint, this sequence repeats, with the regular meeting as its unit. 
 
 In this way, a project in Project Sprint moves forward by repeating exploration and convergence through output and dialogue. The process you experienced in the Workshop was designed to let you experience this basic cycle.
 
-<img width="960" height="540" alt="The cycle of exploration and convergence" src="https://github.com/user-attachments/assets/c8393f90-3a12-4891-8c97-d07fec419ce5" />
+<img width="960" height="540" alt="The cycle of exploration and convergence" src="../../code/images/cycle.png" />
 
 ### Section 1. Exploration and Convergence through Output and Dialogue
 
@@ -104,7 +104,7 @@ Dialogue has the role of connecting individual output to shared understanding.
 The repetition of output and dialogue is the rhythm of exploration and convergence, and at the same time the rhythm of differentiation and integration (members diverge as each explores on their own, then integrate what they found through dialogue).<br>
 Project Sprint is a structure that keeps updating the project's understanding and action by keeping this rhythm going.
 
-<img width="960" height="540" alt="Differentiation and Integration" src="https://github.com/user-attachments/assets/d157bb46-5fc0-42df-92a9-4fd3e1f18150" />
+<img width="960" height="540" alt="Differentiation and Integration" src="../../code/images/differentiation-and-integration.png" />
 <p><em>Source: Jun Ishikawa (2016), <span lang="ja">シェアド・リーダーシップ：チーム全員の影響力が職場を強くする</span> (Shared Leadership: How the Influence of Every Team Member Strengthens the Workplace), Chuokeizai-sha.</em></p>
 
 ### Section 2. The Regular Meeting as a Mechanism
@@ -118,7 +118,7 @@ Each member's output is brought to the regular meeting, where dialogue gives it 
 This is not mere information sharing; it is the project members themselves deciding, by their own will, how convergence will take place.<br>
 Repeating this convergence regularly sustains the alternation of exploration and convergence.
 
-<img width="960" height="540" alt="The structure of Project Sprint" src="https://github.com/user-attachments/assets/9b09c01c-7f8f-4bc6-aa20-1d4e8833c968" />
+<img width="960" height="540" alt="The structure of Project Sprint" src="../../code/images/structure.png" />
 
 ### Section 3. The Regular Meeting as a Harvest Festival
 

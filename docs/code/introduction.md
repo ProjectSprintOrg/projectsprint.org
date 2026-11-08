@@ -122,7 +122,7 @@ CODE は、上記の前提に基づき、Project Sprint の考え方と構造を
 Step2 では、その探索の結果として、チームがどのように価値を生み出し、社会に変化をもたらすのかを扱う。<br>
 （Step2 は、v5.1以降で記述されるため、v5.0時点では記述されていない。）
 
-<img width="1535" height="1024" alt="step" src="https://github.com/user-attachments/assets/e9da1cc1-e27d-4c10-a1d5-74a9260f03b7" />
+<img width="1535" height="1024" alt="step" src="./images/step.png" />
 
 Project Sprint は、個人の行動から始まり、チームとしての探索を経て、価値の実現へと至る構造を持っている。本文書はその過程を段階的に理解できるよう構成されている。
 

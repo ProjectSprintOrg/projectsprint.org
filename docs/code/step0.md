@@ -80,7 +80,7 @@ Project Sprint では、この一連の流れを定例会議を単位として�
 
 このように、Project Sprint におけるプロジェクトは、出力と対話を通じて探索と収束を反復することで前進する。Workshop で体験したプロセスは、この基本的なサイクルを体験するためのものである。
 
-<img width="960" height="540" alt="cycle" src="https://github.com/user-attachments/assets/c8393f90-3a12-4891-8c97-d07fec419ce5" />
+<img width="960" height="540" alt="cycle" src="./images/cycle.png" />
 
 ### Section 1.  出力と対話による探索と収束
 
@@ -103,7 +103,7 @@ Project Sprint においては、この出力が継続的に行われること�
 出力と対話の繰り返しは、探索と収束のリズムであり、同時に分化と統合のリズムでもある。<br>
 Project Sprint は、このリズムを維持しつづけることで、プロジェクトの理解と行動を更新しつづける構造である。
 
-<img width="960" height="540" alt="Differentiation and Integration" src="https://github.com/user-attachments/assets/d157bb46-5fc0-42df-92a9-4fd3e1f18150" />
+<img width="960" height="540" alt="Differentiation and Integration" src="./images/differentiation-and-integration.png" />
 <p><em>参照元: 石川淳（2016）「シェアド・リーダーシップ：チーム全員の影響力が職場を強くする」中央経済社</em></p>
 
 ### Section 2.  定例会議という装置
@@ -117,7 +117,7 @@ Project Sprint は、このリズムを維持しつづけることで、プロ�
 これは単なる情報共有ではなく、プロジェクトメンバーの意志によって収束のあり方を定める行為である。<br>
 この収束を定期的に繰り返すことで、探索と収束の反復が維持される。
 
-<img width="960" height="540" alt="structure" src="https://github.com/user-attachments/assets/9b09c01c-7f8f-4bc6-aa20-1d4e8833c968" />
+<img width="960" height="540" alt="structure" src="./images/structure.png" />
 
 ### Section 3.  収穫祭としての定例会議
 

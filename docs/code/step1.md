@@ -198,7 +198,7 @@ Project Sprint においては、便宜上プロジェクトを以下の3つの�
 
   プロジェクトにおける個々の活動を、これらの3つの側面それぞれから解釈することで、個々の活動がプロジェクトの中で持つ意義や効果をより正確かつ多面的に認識できるようになる。この認識をプロジェクトチームで共有することにより、各メンバーは自身の行動を状況に応じて調整し、プロジェクト全体としての前進に寄与することができる。
 
-<img width="1440" height="1024" alt="domain" src="https://github.com/user-attachments/assets/dada8279-0ba9-4bfd-b874-08124db8918b" />
+<img width="1440" height="1024" alt="domain" src="./images/domain.png" />
 
 ## Mindset : 他者と探索を共有する主体としての態度
 
