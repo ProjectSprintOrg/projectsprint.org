@@ -6,7 +6,7 @@ outline: [2, 3]
 
 Project Sprint の各バージョンの変更内容です。v5.0 以降は GitHub の [Releases](https://github.com/ProjectSprintOrg/projectsprint.org/releases) と同じ内容を掲載しています。v4.3 以前は旧リポジトリ（copilot-jp/project-sprint）時代の記録を移植したものです。
 
-各版の文書そのものは、メジャーバージョンの最終版（v4.3 / v3.3 / v2.2）は[サイト内のアーカイブ](/archive/)で、それ以外のマイナー版はこのリポジトリの `archive/versions` ブランチ（[CODE/](https://github.com/ProjectSprintOrg/projectsprint.org/tree/archive/versions/CODE) の `CODE/` 配下で読めます。
+各版の文書そのものは、メジャーバージョンの最終版（v4.3 / v3.3 / v2.2）は[サイト内のアーカイブ](/archive/)で、それ以外のマイナー版は GitHub リポジトリの [archive/versions ブランチの CODE/ 配下](https://github.com/ProjectSprintOrg/projectsprint.org/tree/archive/versions/CODE)で読めます（例: v4.1 は `CODE/v4/v4.1`）。
 
 ## CODE
 
