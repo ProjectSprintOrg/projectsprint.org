@@ -6,7 +6,7 @@ outline: [2, 3]
 
 Project Sprint の各バージョンの変更内容です。v5.0 以降は GitHub の [Releases](https://github.com/ProjectSprintOrg/projectsprint.org/releases) と同じ内容を掲載しています。v4.3 以前は旧リポジトリ（copilot-jp/project-sprint）時代の記録を移植したものです。
 
-各版の文書そのものは、メジャーバージョンの最終版（v4.3 / v3.3 / v2.2）は[サイト内のアーカイブ](/archive/)で、それ以外のマイナー版はこのリポジトリのタグ [pre-site-restructure](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE) の `CODE/` 配下で読めます。
+各版の文書そのものは、メジャーバージョンの最終版（v4.3 / v3.3 / v2.2）は[サイト内のアーカイブ](/archive/)で、それ以外のマイナー版はこのリポジトリの `archive/versions` ブランチ（[CODE/](https://github.com/ProjectSprintOrg/projectsprint.org/tree/archive/versions/CODE) の `CODE/` 配下で読めます。
 
 ## CODE
 
@@ -47,7 +47,7 @@ v4.3 を最新版として、[旧リポジトリ](https://github.com/copilot-jp/
 ### v4.3
 
 - [この版の文書を読む（サイト内アーカイブ）](/archive/v4.3/)
-- [当時のファイル（GitHub、タグ pre-site-restructure）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE/v4/.3_ja)
+- [当時のファイル（GitHub、archive/versions ブランチ）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/archive/versions/CODE/v4/v4.3)
 
 **v4.3 (January 11th, 2024)**
 
@@ -70,7 +70,7 @@ v4.3では、出力と対話のサイクルがプロジェクトを推進する�
 
 ### v4.2
 
-- [当時のファイル（GitHub、タグ pre-site-restructure）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE/v4/.2_ja)
+- [当時のファイル（GitHub、archive/versions ブランチ）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/archive/versions/CODE/v4/v4.2)
 
 **v4.2 (September 20th, 2023)**
 
@@ -92,7 +92,7 @@ v4.2では、プロジェクトストーリーとフラッグの概念を追加�
 
 ### v4.1
 
-- [当時のファイル（GitHub、タグ pre-site-restructure）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE/v4/.1_ja)
+- [当時のファイル（GitHub、archive/versions ブランチ）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/archive/versions/CODE/v4/v4.1)
 
 **v4.1 (July 6th, 2023)**
 
@@ -109,7 +109,7 @@ v4.2では、プロジェクトストーリーとフラッグの概念を追加�
 
 ### v4.0
 
-- [当時のファイル（GitHub、タグ pre-site-restructure）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE/v4/.0_ja)
+- [当時のファイル（GitHub、archive/versions ブランチ）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/archive/versions/CODE/v4/v4.0)
 
 v4では、Project Sprint がこれまでも重視してきた「作成物を生む」という行為により重点を置き、プロジェクトを「出力」と「成果」の関係から捉えなおしました。このことにより、以下のような効果を期待しています。
 
@@ -135,7 +135,7 @@ v4では、Project Sprint がこれまでも重視してきた「作成物を生
 ### v3.3
 
 - [この版の文書を読む（サイト内アーカイブ）](/archive/v3.3/)
-- [当時のファイル（GitHub、タグ pre-site-restructure）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE/v3/.3_ja)
+- [当時のファイル（GitHub、archive/versions ブランチ）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/archive/versions/CODE/v3/v3.3)
 
 **v3.3.0 (July 6th, 2022)**
 
@@ -159,7 +159,7 @@ v4では、Project Sprint がこれまでも重視してきた「作成物を生
 
 ### v3.2
 
-- [当時のファイル（GitHub、タグ pre-site-restructure）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE/v3/.2_ja)
+- [当時のファイル（GitHub、archive/versions ブランチ）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/archive/versions/CODE/v3/v3.2)
 
 **v3.2.0 (May 31st, 2022)**
 
@@ -178,7 +178,7 @@ v4では、Project Sprint がこれまでも重視してきた「作成物を生
 
 ### v3.1
 
-- [当時のファイル（GitHub、タグ pre-site-restructure）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE/v3/.1_ja)
+- [当時のファイル（GitHub、archive/versions ブランチ）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/archive/versions/CODE/v3/v3.1)
 
 **v3.1.0 (May 4th, 2022）**
 
@@ -195,7 +195,7 @@ v4では、Project Sprint がこれまでも重視してきた「作成物を生
 
 ### v3.0
 
-- [当時のファイル（GitHub、タグ pre-site-restructure）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE/v3/.0_ja)
+- [当時のファイル（GitHub、archive/versions ブランチ）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/archive/versions/CODE/v3/v3.0)
 
 **v3.0.0-alpha (Dec 20th, 2021）**
 
@@ -215,7 +215,7 @@ v4では、Project Sprint がこれまでも重視してきた「作成物を生
 ### v2.2
 
 - [この版の文書を読む（サイト内アーカイブ）](/archive/v2.2/)
-- [当時のファイル（GitHub、タグ pre-site-restructure）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE/v2/.2_ja)
+- [当時のファイル（GitHub、archive/versions ブランチ）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/archive/versions/CODE/v2/v2.2)
 
 **v2.2.0 (Sep 28th, 2021)**
 
