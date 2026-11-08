@@ -125,7 +125,9 @@ export default defineConfig({
       // 標準の言語切り替え（PC のヘッダー・モバイルのメニュー）を、ページごとの行き先を使う自前の部品に差し替える
       alias: [
         { find: /^.*\/VPNavBarTranslations\.vue$/, replacement: path.resolve(__dirname, 'theme/NavBarTranslations.vue') },
-        { find: /^.*\/VPNavScreenTranslations\.vue$/, replacement: path.resolve(__dirname, 'theme/NavScreenTranslations.vue') }
+        { find: /^.*\/VPNavScreenTranslations\.vue$/, replacement: path.resolve(__dirname, 'theme/NavScreenTranslations.vue') },
+        // 768〜1279px でヘッダーがまとまる「⋯」メニュー。ここにも言語リンクがある
+        { find: /^.*\/VPNavBarExtra\.vue$/, replacement: path.resolve(__dirname, 'theme/NavBarExtra.vue') }
       ]
     }
   },
