@@ -6,11 +6,14 @@ outline: [2, 3]
 
 Project Sprint の各バージョンの変更内容です。v5.0 以降は GitHub の [Releases](https://github.com/ProjectSprintOrg/projectsprint.org/releases) と同じ内容を掲載しています。v4.3 以前は旧リポジトリ（copilot-jp/project-sprint）時代の記録を移植したものです。
 
+各版の文書そのものは、メジャーバージョンの最終版（v4.3 / v3.3 / v2.2）は[サイト内のアーカイブ](/archive/)で、それ以外のマイナー版はこのリポジトリのタグ [pre-site-restructure](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE) の `CODE/` 配下で読めます。
+
 ## CODE
 
 ### v5.0
 
 - [GitHub のリリースページ](https://github.com/ProjectSprintOrg/projectsprint.org/releases/tag/v5.0)
+
 **v5.0 (June 18th, 2026)**
 
 Project Sprint v5.0 では、これまでの Project Sprint の実践を踏まえ、フレームワーク全体を根本から再構成しました。
@@ -32,6 +35,7 @@ v4 系では「出力」を中心にプロジェクトを捉え直し、定例�
 ### v4.3-transition
 
 - [GitHub のリリースページ](https://github.com/ProjectSprintOrg/projectsprint.org/releases/tag/v4.3-transition)
+
 **v4.3-transition (February 6th, 2025)**
 
 v4.3 を最新版として、[旧リポジトリ](https://github.com/copilot-jp/project-sprint)から移管しました。主な目的は以下の 3 点です。
@@ -42,7 +46,9 @@ v4.3 を最新版として、[旧リポジトリ](https://github.com/copilot-jp/
 
 ### v4.3
 
-- [当時の文書（旧リポジトリ）](https://github.com/copilot-jp/project-sprint/blob/master/JA/v4.3)
+- [この版の文書を読む（サイト内アーカイブ）](/archive/v4.3/)
+- [当時のファイル（GitHub、タグ pre-site-restructure）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE/v4/.3_ja)
+
 **v4.3 (January 11th, 2024)**
 
 v4.3では、出力と対話のサイクルがプロジェクトを推進することをより強調しました。そのために定例会議を活用して行動を習慣化することが重要であるとの前提に立ち、主に Framework を改稿しました。また、Practical Guideのドキュメント版コンテンツとして、「タスクとアクション」を追加しました。その他細かい更新箇所は以下の通りです。
@@ -64,7 +70,8 @@ v4.3では、出力と対話のサイクルがプロジェクトを推進する�
 
 ### v4.2
 
-- [当時の文書（旧リポジトリ）](https://github.com/copilot-jp/project-sprint/blob/master/JA/v4.2)
+- [当時のファイル（GitHub、タグ pre-site-restructure）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE/v4/.2_ja)
+
 **v4.2 (September 20th, 2023)**
 
 v4.2では、プロジェクトストーリーとフラッグの概念を追加しました。チームが統合的な行動を取るために、目的達成までの過程をシンプルな要素で表現できるようにすることが狙いです。その他細かい更新箇所は以下の通りです。
@@ -85,7 +92,8 @@ v4.2では、プロジェクトストーリーとフラッグの概念を追加�
 
 ### v4.1
 
-- [当時の文書（旧リポジトリ）](https://github.com/copilot-jp/project-sprint/blob/master/JA/v4.1)
+- [当時のファイル（GitHub、タグ pre-site-restructure）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE/v4/.1_ja)
+
 **v4.1 (July 6th, 2023)**
 
 * JA
@@ -101,7 +109,8 @@ v4.2では、プロジェクトストーリーとフラッグの概念を追加�
 
 ### v4.0
 
-- [当時の文書（旧リポジトリ）](https://github.com/copilot-jp/project-sprint/blob/master/JA/v4.0)
+- [当時のファイル（GitHub、タグ pre-site-restructure）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE/v4/.0_ja)
+
 v4では、Project Sprint がこれまでも重視してきた「作成物を生む」という行為により重点を置き、プロジェクトを「出力」と「成果」の関係から捉えなおしました。このことにより、以下のような効果を期待しています。
 
 * 作成物を小さく確実に生み出し続けることを重視することで、プロジェクトの推進と最適化がよりスムーズに行えるようになる
@@ -125,7 +134,9 @@ v4では、Project Sprint がこれまでも重視してきた「作成物を生
 
 ### v3.3
 
-- [当時の文書（旧リポジトリ）](https://github.com/copilot-jp/project-sprint/blob/master/JA/v3.3)
+- [この版の文書を読む（サイト内アーカイブ）](/archive/v3.3/)
+- [当時のファイル（GitHub、タグ pre-site-restructure）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE/v3/.3_ja)
+
 **v3.3.0 (July 6th, 2022)**
 
 * JA
@@ -148,7 +159,8 @@ v4では、Project Sprint がこれまでも重視してきた「作成物を生
 
 ### v3.2
 
-- [当時の文書（旧リポジトリ）](https://github.com/copilot-jp/project-sprint/blob/master/JA/v3.2)
+- [当時のファイル（GitHub、タグ pre-site-restructure）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE/v3/.2_ja)
+
 **v3.2.0 (May 31st, 2022)**
 
 * JA
@@ -166,7 +178,8 @@ v4では、Project Sprint がこれまでも重視してきた「作成物を生
 
 ### v3.1
 
-- [当時の文書（旧リポジトリ）](https://github.com/copilot-jp/project-sprint/blob/master/JA/v3.1)
+- [当時のファイル（GitHub、タグ pre-site-restructure）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE/v3/.1_ja)
+
 **v3.1.0 (May 4th, 2022）**
 
 * JA
@@ -182,7 +195,8 @@ v4では、Project Sprint がこれまでも重視してきた「作成物を生
 
 ### v3.0
 
-- [当時の文書（旧リポジトリ）](https://github.com/copilot-jp/project-sprint/blob/master/JA/v3.0)
+- [当時のファイル（GitHub、タグ pre-site-restructure）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE/v3/.0_ja)
+
 **v3.0.0-alpha (Dec 20th, 2021）**
 
 * JA
@@ -200,7 +214,9 @@ v4では、Project Sprint がこれまでも重視してきた「作成物を生
 
 ### v2.2
 
-- [当時の文書（旧リポジトリ）](https://github.com/copilot-jp/project-sprint/blob/master/JA/v2.2)
+- [この版の文書を読む（サイト内アーカイブ）](/archive/v2.2/)
+- [当時のファイル（GitHub、タグ pre-site-restructure）](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE/v2/.2_ja)
+
 **v2.2.0 (Sep 28th, 2021)**
 
 * JA

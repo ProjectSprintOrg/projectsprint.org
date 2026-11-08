@@ -14,7 +14,7 @@
 
 ## 掲載していないマイナーバージョンについて
 
-v4.0〜v4.2、v3.0〜v3.2 などのマイナーバージョンは、このサイトには掲載していません。各バージョンの変更内容は [Release Notes](/releases) を、文書そのものは GitHub リポジトリの履歴（[v4.3-transition](https://github.com/ProjectSprintOrg/projectsprint.org/releases/tag/v4.3-transition) 以前のコミット）をご参照ください。
+v4.0〜v4.2、v3.0〜v3.2 などのマイナーバージョンは、このサイトには掲載していません。各バージョンの変更内容は [Release Notes](/releases) を、文書そのものは GitHub リポジトリのタグ [pre-site-restructure](https://github.com/ProjectSprintOrg/projectsprint.org/tree/pre-site-restructure/CODE) の `CODE/` 配下をご参照ください（例: v4.1 は `CODE/v4/.1_ja`）。
 
 ## Practical Guide について
 
