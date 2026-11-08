@@ -33,6 +33,35 @@ function contentUpdatedAt(file: string): number | undefined {
   }
 }
 
+// 言語切り替えメニューの行き先をページごとに計算する。
+// VitePress 標準は URL の先頭に /en/ を足す・外すだけで、相手側にページがあるかを見ないため。
+// exact: 相手言語に内容の対応するページがあるか（false のときは相手言語の入口へ案内する）
+type AltLang = { lang: 'en' | 'ja'; link: string; exact: boolean }
+const DOCS_DIR = path.resolve(__dirname, '..')
+const mdExists = (rel: string) => fs.existsSync(path.join(DOCS_DIR, rel))
+const toLink = (rel: string) => '/' + rel.replace(/(^|\/)index\.md$/, '$1').replace(/\.md$/, '')
+
+function altLangOf(rel: string): AltLang {
+  if (!rel.startsWith('en/')) {
+    // 日本語 → 英語：同じパスの英語ページがあればそこへ。無ければ英語トップで「日本語のみ」と案内する
+    const en = 'en/' + rel
+    if (mdExists(en)) return { lang: 'en', link: toLink(en), exact: true }
+    return { lang: 'en', link: `/en/?from=${toLink(rel)}`, exact: false }
+  }
+  const ja = rel.slice('en/'.length)
+  // En v2.0 は日本語 v2.2 の英訳なので、v2.2 の同名ページ → その章の目次 → v2.2 の目次の順に探す
+  const v2 = ja.match(/^archive\/v2\.0\/(.*)$/)
+  if (v2) {
+    const target = 'archive/v2.2/' + v2[1]
+    if (mdExists(target)) return { lang: 'ja', link: toLink(target), exact: true }
+    const section = v2[1].includes('/') ? `archive/v2.2/${v2[1].split('/')[0]}/index.md` : ''
+    if (section && mdExists(section)) return { lang: 'ja', link: toLink(section), exact: false }
+    return { lang: 'ja', link: '/archive/v2.2/', exact: false }
+  }
+  if (mdExists(ja)) return { lang: 'ja', link: toLink(ja), exact: true }
+  return { lang: 'ja', link: '/', exact: false }
+}
+
 export default defineConfig({
   base,
   lang: 'ja',
@@ -48,6 +77,7 @@ export default defineConfig({
     // 代わりに VersionFooter がそのバージョンの構成全体を表示する。
     fm.prev = false
     fm.next = false
+    fm.altLang = altLangOf(rel)
     // Practical Guide は CODE v4 準拠なので、準拠バージョン（v4.3）のリリース日を表示する
     const archive = rel.match(/^(?:en\/)?archive\/(v[\d.]+)\//) ?? (rel.startsWith('practical-guide/') ? [rel, 'v4.3'] : null)
     let lastUpdated = archive
@@ -90,7 +120,14 @@ export default defineConfig({
     }
   },
   vite: {
-    plugins: [llmstxt()]
+    plugins: [llmstxt()],
+    resolve: {
+      // 標準の言語切り替え（PC のヘッダー・モバイルのメニュー）を、ページごとの行き先を使う自前の部品に差し替える
+      alias: [
+        { find: /^.*\/VPNavBarTranslations\.vue$/, replacement: path.resolve(__dirname, 'theme/NavBarTranslations.vue') },
+        { find: /^.*\/VPNavScreenTranslations\.vue$/, replacement: path.resolve(__dirname, 'theme/NavScreenTranslations.vue') }
+      ]
+    }
   },
   sitemap: { hostname: 'https://www.projectsprint.org' },
   buildEnd(siteConfig) {

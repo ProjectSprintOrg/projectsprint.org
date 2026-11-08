@@ -34,6 +34,18 @@ function candidates(p: string): string[] {
     push(root)
     return out
   }
+  // /archive/v2.0/...（En v2.0 で標準の言語切り替えを使うと飛んでくる）は、内容の対応する日本語 v2.2 へ
+  const v2 = p.match(/^archive\/v2\.0(?:\/(.*))?$/)
+  if (v2) {
+    const rest = v2[1]
+    if (rest) {
+      push('/archive/v2.2/' + rest, '/archive/v2.2/' + rest + '/')
+      const section = rest.split('/')[0]
+      if (section !== rest) push('/archive/v2.2/' + section + '/')
+    }
+    push('/archive/v2.2/')
+    return out
+  }
   // 最新版の構成を指す URL（/code/..., /practical-guide/..., /en/code/...）は目次へ
   const s = p.match(/^(en\/)?(code|practical-guide|community|archive)(?:\/(.*))?$/)
   if (s) { push(`/${s[1] ?? ''}${s[2]}/`); return out }
@@ -41,11 +53,30 @@ function candidates(p: string): string[] {
   return out
 }
 
+// /en/<path> が無くても日本語の /<path> があるなら、英語トップへ飛ばして「日本語のみ」と案内する
+// （JapaneseOnlyNotice が from を読んで注記を出す）。言語メニューのルール 2 と同じ着地。
+async function japaneseOnly(rel: string): Promise<string | null> {
+  const m = rel.match(/^en\/(.+)$/)
+  if (!m || /^en(\/|$)/.test(m[1])) return null
+  const ja = '/' + m[1].replace(/\.html$/, '').replace(/\/index$/, '/')
+  try {
+    const res = await fetch(base + ja, { method: 'HEAD' })
+    if (!res.ok) return null
+    // 転送（/community → /community/ など）があれば、最終的な URL を元のページとして使う
+    const final = new URL(res.url || location.origin + base + ja).pathname
+    return final.startsWith(base + '/') ? final.slice(base.length) : ja
+  } catch {
+    return null
+  }
+}
+
 onMounted(async () => {
   const full = decodeURIComponent(location.pathname)
   const rel = full.startsWith(base + '/') ? full.slice(base.length + 1) : full.replace(/^\//, '')
   path.value = '/' + rel
   isEn.value = rel.startsWith('en/') || rel.startsWith('en-')
+  const ja = await japaneseOnly(rel)
+  if (ja) { location.replace(`${base}/en/?from=${encodeURIComponent(ja).replace(/%2F/g, '/')}`); return }
   for (const c of candidates(rel)) {
     try {
       const res = await fetch(base + c, { method: 'HEAD' })
