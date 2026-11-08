@@ -1,0 +1,33 @@
+# MIT License（サイトのコード部分）
+
+このライセンスは、このリポジトリのうち、サイトを生成するためのプログラムと設定に適用されます。
+
+- `docs/.vitepress/` 配下（サイトの設定、テーマ、部品、転送表の生成など）
+- `.github/` 配下（ビルドとデプロイのワークフロー）
+- `package.json`、`package-lock.json`
+
+Project Sprint の文書群（`docs/` 配下の Markdown、画像、翻訳）は対象外で、[CC BY-SA 4.0](LICENSE.md) のもとで提供されます。
+
+---
+
+MIT License
+
+Copyright (c) 2026 Project Sprint Org and contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

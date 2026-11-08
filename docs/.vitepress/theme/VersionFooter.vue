@@ -82,10 +82,9 @@ const href = (link?: string) => `${base}${link ?? ''}`
       <a :href="href(isEn ? '/en/' : '/archive/')" class="version-footer__more">{{ isEn ? 'English documentation' : '過去バージョンについて' }}</a>
     </div>
     <div class="version-footer__legal">
-      <span>© 2020–2026 Project Sprint Org and contributors</span>
-      <span v-if="isEn">Text licensed under <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span>
-      <span v-else>文書は <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">CC BY-SA 4.0</a> で公開しています</span>
-      <a :href="href('/community/colophon')">{{ isEn ? 'About this site (Japanese)' : 'このサイトについて' }}</a>
+      <span>© 2020–2026 Project Sprint Org and contributors.</span>
+      <span>Text licensed under <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Site code licensed under <a href="https://github.com/ProjectSprintOrg/projectsprint.org/blob/main/LICENSE-CODE.md">MIT</a>. · <a :href="href('/community/colophon')">About this site</a></span>
+      <span>Originated and supported by <a href="https://copilot.jp/" target="_blank" rel="noopener">COPILOT Inc.</a></span>
     </div>
   </footer>
 </template>
@@ -148,8 +147,8 @@ const href = (link?: string) => `${base}${link ?? ''}`
 .version-footer__label { font-weight: 600; color: var(--vp-c-text-1); }
 .version-footer__legal {
   display: flex;
-  flex-wrap: wrap;
-  gap: 4px 16px;
+  flex-direction: column;
+  gap: 2px;
   margin-top: 20px;
   font-size: 12px;
   color: var(--vp-c-text-3);

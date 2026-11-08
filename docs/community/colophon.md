@@ -17,7 +17,13 @@ Project Sprint の文書群（CODE、Practical Guide、過去バージョン、�
 
 ### サイトのコード
 
-サイトを生成する設定やテーマ（リポジトリの `docs/.vitepress/` と `.github/` 配下）も、現時点では文書と同じ CC BY-SA 4.0 のもとにあります。コードの再利用がしやすいよう、この部分だけ MIT ライセンスに切り替えることを検討しています。
+サイトを生成するプログラムと設定（リポジトリの `docs/.vitepress/` と `.github/` 配下、`package.json`）は、[MIT ライセンス](https://github.com/ProjectSprintOrg/projectsprint.org/blob/main/LICENSE-CODE.md)で提供しています。このサイトの作りをそのまま別のプロジェクトに流用しても構いません。文書とコードでライセンスが異なるのは、文書向けの CC BY-SA をプログラムに当てると再利用しづらいためです。
+
+## クレジット
+
+Project Sprint は、2020 年に[株式会社コパイロツト](https://copilot.jp/)（COPILOT Inc.）が起点となって公開され、2025 年に Project Sprint Org へ移管されました。コパイロツトは現在も、メンテナーの参加や週次ミーティングの運営を通じて Project Sprint の発展に協力しています。各ページのフッターの「Originated and supported by COPILOT Inc.」は、このことを示しています。
+
+著作権表示の「Project Sprint Org and contributors」には、コパイロツトを含むこれまでのすべての貢献者が含まれます。
 
 ## 使っている道具
 
