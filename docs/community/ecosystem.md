@@ -1,3 +1,6 @@
+---
+description: "Project Sprint に基づいて設計されたサービスやツールの紹介。定例会議を起点にした自律的なプロジェクト推進を支援する SuperGoodMeetings など。"
+---
 # 関連サービス
 
 Project Sprint に基づいて設計されたサービスです。

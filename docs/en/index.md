@@ -1,5 +1,6 @@
 ---
-title: Project Sprint (English)
+title: English
+description: "Project Sprint is an open-source framework for moving projects forward under uncertainty. English documentation: CODE v5.0 (AI-assisted translation, community review wanted) and the archived En v2.0. The Japanese text is authoritative."
 ---
 # Project Sprint
 

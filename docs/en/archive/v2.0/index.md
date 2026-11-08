@@ -1,3 +1,7 @@
+---
+title: CODE En v2.0 (archived)
+description: "Archived English edition of Project Sprint CODE v2.0 (July 2021), consisting of Tutorial, Essentials, Tips, Advance and Reference. Concepts and terminology have changed significantly since v2; see CODE v5.0 for the current version."
+---
 # En v2.0.1
 
 # **What is CODE?**

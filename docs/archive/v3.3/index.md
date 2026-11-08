@@ -1,3 +1,7 @@
+---
+title: CODE v3.3（アーカイブ）
+description: "Project Sprint CODE v3.3（2022 年 10 月）のアーカイブ。プロジェクトチームを主体とする記述に全面更新した v3 系の最終版です。Theories / Practices / Essentials / Reference で構成されています。"
+---
 # v3.3
 
 ## **CODEとは**

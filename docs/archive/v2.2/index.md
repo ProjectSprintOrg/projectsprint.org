@@ -1,3 +1,7 @@
+---
+title: CODE v2.2（アーカイブ）
+description: "Project Sprint CODE v2.2（2021 年 9 月）のアーカイブ。Tutorial / Essentials / Tips / Advance / Reference で構成された v2 系の最終版です。"
+---
 # Ja v2.2.0
 
 ## **CODEとは**

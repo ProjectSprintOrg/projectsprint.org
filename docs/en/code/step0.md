@@ -1,3 +1,6 @@
+---
+description: "Step0 focuses on the individual as the most basic unit in Project Sprint: acting, producing output, observing and proposing, and so updating one's own understanding of the world as an agent taking part in exploration."
+---
 # Step0. The Individual Updates the World
 
 > [!NOTE]

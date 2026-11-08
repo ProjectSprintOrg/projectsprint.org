@@ -1,3 +1,6 @@
+---
+description: "Practical Guide は、Project Sprint を実際のプロジェクトに適用するための手引きです（CODE v4 準拠）。定例会議を起点にプロジェクトを前進させる最小限の行動を示す Minimum Guide と、ジョブとアクションの考え方を収録しています。"
+---
 # Practical Guide とは
 
 > [!NOTE]

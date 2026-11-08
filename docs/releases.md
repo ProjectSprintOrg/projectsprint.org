@@ -1,6 +1,7 @@
 ---
 title: Release Notes
 outline: [2, 3]
+description: "Project Sprint の各バージョンの変更内容（Release Notes）。最新版 CODE v5.0 から v1 までの変更履歴と、各版の文書への案内をまとめた正本のページです。"
 ---
 # Release Notes
 

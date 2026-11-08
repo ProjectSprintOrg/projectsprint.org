@@ -1,3 +1,6 @@
+---
+description: "CODE is the body of documents that describe Project Sprint. The current version, v5.0, consists of Introduction, Step0, Step1 and Key Terms. This English edition is an AI-assisted translation of the Japanese original."
+---
 # CODE
 
 **CODE** is the collective name for the body of documents that describe Project Sprint. It puts the thinking and structure of Project Sprint into words. Its role is to help you make sense of what you experienced in the Workshop, and to give you criteria for judgment in practice.

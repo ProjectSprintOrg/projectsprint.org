@@ -1,3 +1,6 @@
+---
+description: "Step1 describes how multiple individuals form a shared understanding through output and dialogue and carry exploration forward as a team: the regular meeting, reflection, and the rhythm of differentiation and integration."
+---
 # Step1. Sharing Our Perception of the World with Others
 
 > [!NOTE]
