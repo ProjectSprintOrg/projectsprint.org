@@ -3,7 +3,7 @@ import llmstxt from 'vitepress-plugin-llms'
 import footnote from 'markdown-it-footnote'
 import { fromIndex } from './sidebar'
 import { writeRedirects } from './redirects'
-import { execSync } from 'node:child_process'
+import { contentUpdatedAt as contentUpdatedAtIn } from './content-date'
 import fs from 'node:fs'
 import path from 'node:path'
 
@@ -23,29 +23,9 @@ const ARCHIVE_DATES: Record<string, string> = {
   'v2.0': '2021-07-15'
 }
 
-// md ファイルの本文が最後に変わったコミットの日時（ファイルの移動・改名を追跡する）。
-// frontmatter（title / description など）だけを変えたコミットは本文の更新とみなさない
-const FRONTMATTER_LINE = /^[+-](\s*$|---\s*$|\s*[A-Za-z_-]+:(\s|$)|\s*- [A-Za-z_-]+:\s)/
-function contentUpdatedAt(file: string): number | undefined {
-  try {
-    const out = execSync(`git log --follow --diff-filter=AM --format=%x01%at -p -- "${file}"`, {
-      cwd: path.resolve(__dirname, '../..'),
-      stdio: ['ignore', 'pipe', 'ignore'],
-      maxBuffer: 64 * 1024 * 1024
-    }).toString()
-    for (const chunk of out.split('\x01').slice(1)) {
-      const nl = chunk.indexOf('\n')
-      const at = Number(chunk.slice(0, nl).trim())
-      const changed = chunk.slice(nl + 1).split('\n').some(
-        l => /^[+-]/.test(l) && !/^(\+\+\+|---) /.test(l) && !FRONTMATTER_LINE.test(l)
-      )
-      if (changed && at) return at * 1000
-    }
-    return undefined
-  } catch {
-    return undefined
-  }
-}
+// 「内容の最終更新」の日付（規則は content-date.ts を参照）
+const REPO_ROOT = path.resolve(__dirname, '../..')
+const contentUpdatedAt = (file: string) => contentUpdatedAtIn(REPO_ROOT, file)
 
 // 言語切り替えメニューの行き先をページごとに計算する。
 // VitePress 標準は URL の先頭に /en/ を足す・外すだけで、相手側にページがあるかを見ないため。
@@ -58,7 +38,8 @@ const toLink = (rel: string) => '/' + rel.replace(/(^|\/)index\.md$/, '$1').repl
 function altLangOf(rel: string): AltLang {
   if (!rel.startsWith('en/')) {
     // 日本語 → 英語：同じパスの英語ページがあればそこへ。無ければ英語トップで「日本語のみ」と案内する
-    const en = 'en/' + rel
+    // 日本語 v2.2 の英訳は En v2.0 なので、archive/v2.2/x は en/archive/v2.0/x と対応させる
+    const en = 'en/' + rel.replace(/^archive\/v2\.2\//, 'archive/v2.0/')
     if (mdExists(en)) return { lang: 'en', link: toLink(en), exact: true }
     return { lang: 'en', link: `/en/?from=${toLink(rel)}`, exact: false }
   }

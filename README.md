@@ -62,6 +62,8 @@ npm run docs:dev
 
 本番と同じ静的ファイルを生成するには `npm run docs:build` を実行します（出力先は `docs/.vitepress/dist/`）。
 
+変更を push する前には `npm run docs:check` を実行してください。本番と同じ設定でビルドしたうえで、サイトの運用ルール（[`CLAUDE.md`](CLAUDE.md) に記載）に合っているかを確認します。PR でも同じ確認が自動で走ります。
+
 ## 🤝 クレジット
 
 Project Sprint は、2020 年に[株式会社コパイロツト](https://copilot.jp/)（COPILOT Inc.）が起点となって公開され、2025 年に Project Sprint Org へ移管されました。コパイロツトは現在も、メンテナーの参加や週次ミーティングの運営を通じて Project Sprint の発展に協力しています。

@@ -1,4 +1,4 @@
-name: Build check
+name: Build and site rules check
 
 on:
   pull_request:
@@ -13,4 +13,4 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run docs:build
+      - run: npm run docs:check

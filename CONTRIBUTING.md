@@ -58,6 +58,12 @@ GitHub の [Releases](https://github.com/ProjectSprintOrg/projectsprint.org/rele
    - ページ下部のバージョン一覧（`docs/.vitepress/theme/VersionFooter.vue`）
    - 過去バージョンの一覧（`docs/archive/index.md`）
 
+## サイトの運用ルールと自動チェック
+
+サイトの作りに関わる決まり（ヘッダーの構成、「内容の最終更新」の意味、過去版は書き換えない、全ページに説明文を書く、など）は、リポジトリ直下の [`CLAUDE.md`](https://github.com/ProjectSprintOrg/projectsprint.org/blob/main/CLAUDE.md) にまとめています。AI（Claude Code）で作業するときはこのファイルが自動で読み込まれますが、人が作業するときの基準も同じです。
+
+決まりの多くは `npm run docs:check` で機械的に確認できます（本番と同じ設定でビルドし、`scripts/check-site.mjs` で確認）。PR を出すと同じ確認が GitHub Actions で自動的に走り、通らないとマージできません。ページを足したときや、多くのページにまたがる変更をしたときは、push の前に手元でも実行してください。
+
 ## 翻訳について
 
 日本語版（`docs/code/`）が正本です。翻訳は同じリポジトリの `docs/<言語コード>/` 配下に、日本語版と同じファイル構成で置きます。
