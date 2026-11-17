@@ -9,11 +9,50 @@
 .vp-doc h2 { margin-top: 56px; }
 .vp-doc img { border-radius: 4px; }
 
-/* スマホ：ホームの見出しと本文の余白 */
+/* ホームのヒーロー。
+   「Project Sprint」を主役にし、日本語のコピーは一段小さく、意味の切れ目でだけ改行する
+   （.nb は docs/index.md の hero.text / tagline で文節を包んでいる） */
+.nb { display: inline-block; }
+.VPHero .name { letter-spacing: -0.02em; }
+.VPHero .text {
+  max-width: 600px !important;
+  margin-top: 14px;
+  font-size: 30px !important;
+  line-height: 1.5 !important;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--vp-c-text-1);
+}
+.VPHero .tagline {
+  max-width: 600px !important;
+  padding-top: 18px !important;
+  font-size: 16px !important;
+  line-height: 1.9 !important;
+  font-weight: 400;
+  color: var(--vp-c-text-2);
+}
+.VPHero .actions { padding-top: 28px !important; }
+.VPHero .image-src { max-width: 260px; max-height: 260px; }
+.VPNavBarTitle .logo { height: 26px; }
+
+@media (min-width: 960px) {
+  .VPHero .name { font-size: 60px !important; line-height: 1.1 !important; }
+}
+@media (max-width: 959px) {
+  .VPHero .text { font-size: 24px !important; }
+  .VPHero .tagline { font-size: 15px !important; }
+  /* 中央寄せのレイアウトでは文節ごとの固まりも中央に */
+  .VPHero .text, .VPHero .tagline { margin-left: auto; margin-right: auto; }
+}
+
+/* スマホ */
 @media (max-width: 639px) {
-  .VPHero .name, .VPHero .text { font-size: 28px !important; line-height: 1.35 !important; }
-  .VPHero .tagline { font-size: 15px !important; line-height: 1.8 !important; }
-  .VPHero .image-container { transform: scale(0.8); }
+  .VPHero .name { font-size: 36px !important; line-height: 1.2 !important; }
+  .VPHero .text { font-size: 20px !important; line-height: 1.55 !important; margin-top: 10px; }
+  .VPHero .tagline { font-size: 14px !important; line-height: 1.85 !important; padding-top: 14px !important; }
+  /* スマホでは長い文節を画面幅で折り返せるようにする */
+  .VPHero .tagline .nb { display: inline; }
+  .VPHero .image-src { max-width: 170px; max-height: 170px; }
   .vp-doc { font-size: 15.5px; }
   .vp-doc h1 { font-size: 26px; line-height: 1.4; }
   .vp-doc h2 { font-size: 21px; margin-top: 40px; }
