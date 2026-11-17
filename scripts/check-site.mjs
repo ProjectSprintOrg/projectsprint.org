@@ -121,7 +121,7 @@ if (!fs.existsSync(path.join(DIST, 'index.html'))) {
   const pageUrls = new Set(pages.map((p) => urlOf(p.f)))
   const attr = (html, re) => { const m = html.match(re); return m ? m[1] : undefined }
 
-  if (!/<base href="\/"|href="\/pjs_logo\.png"/.test(pages[0].html)) fail('build', 'base が / ではありません。VITEPRESS_BASE=/ を付けてビルドしてください')
+  if (!/href="\/favicon\.svg"/.test(pages[0].html)) fail('build', 'base が / ではありません。VITEPRESS_BASE=/ を付けてビルドしてください')
 
   for (const { f, html } of pages) {
     const url = urlOf(f)

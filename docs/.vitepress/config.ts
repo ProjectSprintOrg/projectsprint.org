@@ -240,8 +240,11 @@ export default defineConfig({
     return lastUpdated ? { lastUpdated } : {}
   },
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: `${base}pjs_logo.png` }],
-    ['link', { rel: 'apple-touch-icon', href: `${base}pjs_logo.png` }],
+    // ファビコンはロゴの緑のラインだけ（小さく表示しても潰れないように線を太くしてある）
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}favicon.svg` }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: `${base}favicon-32.png` }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '192x192', href: `${base}favicon-192.png` }],
+    ['link', { rel: 'apple-touch-icon', href: `${base}apple-touch-icon.png` }],
     ['meta', { name: 'theme-color', content: '#0f6e78' }],
     ['meta', { property: 'og:site_name', content: 'Project Sprint' }],
     ['meta', { property: 'og:image', content: OG_IMAGE }],
@@ -524,7 +527,7 @@ export default defineConfig({
   },
 
   themeConfig: {
-    logo: '/pjs_logo.png',
+    logo: { src: '/pjs_mark.svg', alt: '' },
     search: { provider: 'local' },
     socialLinks: [{ icon: 'github', link: repo }],
     footer: {

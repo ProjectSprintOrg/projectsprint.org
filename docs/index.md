@@ -5,8 +5,8 @@ titleTemplate: 不確実な状況においてプロジェクトを前進させ�
 
 hero:
   name: Project Sprint
-  text: 不確実な状況においてプロジェクトを前進させるためのフレームワーク
-  tagline: プロジェクトを「あらかじめ定めた正解を実行する活動」ではなく、「行動を通じて理解を更新し、価値を探索する活動」と捉える。オープンソースのフレームワークとして公開しています。
+  text: <span class="nb">不確実な状況において</span><span class="nb">プロジェクトを前進させるための</span><span class="nb">フレームワーク</span>
+  tagline: <span class="nb">プロジェクトを「あらかじめ定めた正解を実行する活動」ではなく、</span><span class="nb">「行動を通じて理解を更新し、価値を探索する活動」と捉える。</span><span class="nb">オープンソースのフレームワークとして公開しています。</span>
   image:
     src: /pjs_logo.png
     alt: Project Sprint
