@@ -45,7 +45,7 @@
 - 過去版（`docs/archive/`、`docs/en/archive/`）の本文は変更しない。表示上の調整（alt、リンク先など）はビルド側（`config.ts` の markdown ルール、リダイレクト）で行う。やむを得ず本文を直すときは PR で理由を説明する。
 - Release Notes の正本は `docs/releases.md`。GitHub Releases にはタグと短い要約だけ。
 - 図版は `docs/code/images/` に置く。GitHub の添付 URL を参照しない。
-- ファビコン（`docs/public/favicon.svg` と PNG 版）とヘッダーのロゴ（`pjs_mark.svg`）は、ロゴの緑のラインだけを元画像からなぞって描き起こしたもの。トップページの大きなロゴは `pjs_logo.png`（背景透過）。デザイナーの元データが手に入ったら差し替える。
+- ファビコン（`docs/public/favicon.svg` と PNG 版）とヘッダーのロゴ（`pjs_mark.svg`）は、ロゴの緑のラインだけのもの。形はデザイナーの元データ（Illustrator の入稿用 PDF）から取り出したベクターで、勝手に描き直さない。ファビコンは同じ形を輪郭線で太らせて小さくても見えるようにしてある。トップページの大きなロゴは `pjs_logo.png`（背景透過）。
 - トップページのコピー（`docs/index.md` の hero）は、文節を `<span class="nb">` で包んで意味の切れ目でだけ改行させている。文言を変えるときも同じ形にする。
 - Markdown に `<style>` / `<script>` を書かない。CSS は `docs/.vitepress/theme/custom.css` へ。画像には alt を付ける。`<BR>` は `<br>`（大文字は Vue がビルドで落ちる）。
 - 旧 GitBook / Jekyll 時代の URL はビルド時に転送ページを生成している（`docs/.vitepress/redirects.ts`、`old-urls.txt`）。ページを移動・改名したら `mapOldPath` に旧パスを足す。
